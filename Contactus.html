@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-comm - Find your choice</title>
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+      .Contactus {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2px;
+    }
+    .contact-image {
+      max-width: 100%;
+      height: 100%;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    textarea {
+      height: 150px;
+    }
+    .btn-primary {
+      background-color: #007bff;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+    .error-message {
+      color: red;
+    }
+  </style>
+
+        <!-- 
+    - favicon
+  -->
+        <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+        <!-- 
+    - custom css link
+  -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+        <!-- 
+    - google font link
+  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet">
+
+    </head>
+
+    <body id="top">
+
+        <!-- 
+    - #HEADER
+  -->
+
+        <header class="header" data-header>
+            <div class="container">
+
+                <div class="overlay" data-overlay></div>
+                <h2 style="display:inline-block;" class="logo">
+                    <img src="favicon.svg">
+                    Ecommerce
+                </h2>
+
+                <button class="nav-open-btn" data-nav-open-btn
+                    aria-label="Open Menu">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+
+                <nav class="navbar" data-navbar>
+
+                    <button class="nav-close-btn" data-nav-close-btn
+                        aria-label="Close Menu">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                    <a href="#" class="logo">
+                        <img src="favicon.svg">
+                    </a>
+
+                    <ul class="navbar-list">
+
+                        <li class="navbar-item">
+                            <a href="index.html" class="navbar-link"
+                                class="active">Home</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="Allproducts.html" class="navbar-link">AllProducts</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="nav-action-list">
+
+                        <li>
+                            <button class="nav-action-btn">
+                                <ion-icon name="search-outline"
+                                    aria-hidden="true"></ion-icon>
+                                <button type="submit"><i
+                                        class="fa fa-search"></i></button>
+
+                                <span class="nav-action-text">Search</span>
+                            </button>
+                        </li>
+
+                        <li>
+                            <a href="#" class="nav-action-btn">
+                                <ion-icon name="person-outline"
+                                    aria-hidden="true"></ion-icon>
+
+                                <span class="nav-action-text">Login /
+                                    Register</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <button class="nav-action-btn">
+                                <ion-icon name="heart-outline"
+                                    aria-hidden="true"></ion-icon>
+
+                                <span class="nav-action-text">Wishlist</span>
+
+                                <data class="nav-action-badge" value="5"
+                                    aria-hidden="true">5</data>
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="nav-action-btn">
+                                <ion-icon name="bag-outline"
+                                    aria-hidden="true"></ion-icon>
+
+                                <data class="nav-action-text"
+                                    value="318.00">Basket:
+                                    <strong>$318.00</strong></data>
+
+                                <data class="nav-action-badge" value="4"
+                                    aria-hidden="true">4</data>
+                            </button>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+        </header>
+
+        <main>
+            <article>
+
+                <!--       
+F        - #HERO
+      -->
+
+                <section class="section hero"
+                    style="background-image: url('https://www.big-stone-bs.com/wp-content/uploads/2016/01/contact-us-banner.jpg')">
+
+                </section>
+
+                <!-- 
+        - #CONTACTUS
+      -->
+
+                <section class="section product">
+                    <div class="Contactus">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img
+                                    src="https://img.freepik.com/free-photo/online-fashion-shopping-with-computer_23-2150400628.jpg"
+                                    class="contact-image" alt="Business Image">
+                            </div>
+                            <div class="col-md-6">
+                                <h1>Contact Form</h1>
+                                <form id="contactForm">
+                                    <div class="form-group">
+                                        <label for="name">Name:</label>
+                                        <input type="text" id="name" name="name"
+                                            class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <input type="email" id="email"
+                                            name="email" class="form-control"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Message:</label>
+                                        <textarea id="message" name="message"
+                                            class="form-control"
+                                            required></textarea>
+                                    </div>
+                                    <button type="submit"
+                                        class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- 
+        - #SERVICE
+      -->
+
+                <section class="section service">
+                    <div class="container">
+
+                        <ul class="service-list">
+
+                            <li class="service-item">
+                                <div class="service-card">
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/service-1.png"
+                                            width="53"
+                                            height="28" loading="lazy"
+                                            alt="Service icon">
+                                    </div>
+
+                                    <div>
+                                        <h3 class="h4 card-title">Free
+                                            Shiping</h3>
+
+                                        <p class="card-text">
+                                            All orders over <span>$150</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <li class="service-item">
+                                <div class="service-card">
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/service-2.png"
+                                            width="43"
+                                            height="35" loading="lazy"
+                                            alt="Service icon">
+                                    </div>
+
+                                    <div>
+                                        <h3 class="h4 card-title">Quick
+                                            Payment</h3>
+
+                                        <p class="card-text">
+                                            100% secure payment
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <li class="service-item">
+                                <div class="service-card">
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/service-3.png"
+                                            width="40"
+                                            height="40" loading="lazy"
+                                            alt="Service icon">
+                                    </div>
+
+                                    <div>
+                                        <h3 class="h4 card-title">Free
+                                            Returns</h3>
+
+                                        <p class="card-text">
+                                            Money back in 30 days
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <li class="service-item">
+                                <div class="service-card">
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/service-4.png"
+                                            width="40"
+                                            height="40" loading="lazy"
+                                            alt="Service icon">
+                                    </div>
+
+                                    <div>
+                                        <h3 class="h4 card-title">24/7
+                                            Support</h3>
+
+                                        <p class="card-text">
+                                            Get Quick Support
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </section>
+            </article>
+        </main>
+
+        <!-- 
+    - #FOOTER
+  -->
+
+        <footer class="footer">
+
+            <div class="footer-top section">
+                <div class="container">
+
+                    <div class="footer-brand">
+
+                        <h2 style="display:inline-block;" class="logo">
+                            <img src="favicon.svg">
+                            Ecommerce
+                        </h2>
+
+                        <ul class="social-list">
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-pinterest"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="footer-link-box">
+                        <ul class="footer-list">
+
+                            <li>
+                                <p class="footer-list-title">Womens</p>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">
+                                    <ion-icon
+                                        name="chevron-forward-outline"></ion-icon>
+
+                                    <span class="footer-link-text">Dress</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">
+                                    <ion-icon
+                                        name="chevron-forward-outline"></ion-icon>
+
+                                    <span class="footer-link-text">Pants</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">
+                                    <ion-icon
+                                        name="chevron-forward-outline"></ion-icon>
+
+                                    <span class="footer-link-text">Skirts</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="footer-list">
+
+                            <li>
+                                <p class="footer-list-title">Mens</p>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">
+                                    <ion-icon
+                                        name="chevron-forward-outline"></ion-icon>
+
+                                    <span class="footer-link-text">Shirts</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">
+                                    <ion-icon
+                                        name="chevron-forward-outline"></ion-icon>
+
+                                    <span class="footer-link-text">Pants</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">
+                                    <ion-icon
+                                        name="chevron-forward-outline"></ion-icon>
+
+                                    <span
+                                        class="footer-link-text">Hoodies</span>
+                                </a>
+                            </li>
+
+                        </div>
+                        <div class="footer-list">
+
+                            <li>
+                                <p class="footer-list-title">Kids</p>
+                            </li>
+                        </div>
+
+                        <ul class="footer-list">
+
+                            <li>
+                                <p class="footer-list-title">Links</p>
+                            </li>
+                            <li>
+                                <a href="index.html" class="footer-link">
+                                    <ion-icon
+                                        name="chevron-forward-outline"></ion-icon>
+
+                                    <span class="footer-link-text">Home</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">
+                                    <ion-icon
+                                        name="chevron-forward-outline"></ion-icon>
+
+                                    <span class="footer-link-text">Login</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#header" class="footer-link">
+                                    <ion-icon
+                                        name="chevron-forward-outline"></ion-icon>
+
+                                    <span
+                                        class="footer-link-text">Contact</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+
+                    <p class="copyright">
+                        &copy; 2024 <a href="#"
+                            class="copyright-link">EcommerceWebsite</a>.
+                        All Rights Reserved
+                    </p>
+
+                </div>
+            </div>
+
+        </footer>
+
+
+ <!-- js validation for contactus form  -->
+
+<script>
+
+const contactForm = document.getElementById('contactForm');
+  const nameInput = document.getElementById('name');
+  const emailInput = document.getElementById('email');
+  const messageInput = document.getElementById('message');
+  const nameError = document.getElementById('nameError');
+  const emailError = document.getElementById('emailError');
+  const messageError = document.getElementById('messageError');
+
+  contactForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+    if (validateForm()) {
+      // Simulate form submission (you can replace this with actual form submission)
+      setTimeout(function() {
+        contactForm.reset(); // Reset form fields
+        alert('Your message has been sent successfully.'); // Show success message
+      }, 1000);
+    }
+  });
+
+  function validateForm() {
+    let valid = true;
+    nameError.textContent = '';
+    emailError.textContent = '';
+    messageError.textContent = '';
+
+    if (nameInput.value.trim() === '') {
+      nameError.textContent = 'Name is required';
+      valid = false;
+    }
+
+    if (emailInput.value.trim() === '') {
+      emailError.textContent = 'Email is required';
+      valid = false;
+    } else if (!isValidEmail(emailInput.value.trim())) {
+      emailError.textContent = 'Invalid email format';
+      valid = false;
+    }
+
+    if (messageInput.value.trim() === '') {
+      messageError.textContent = 'Message is required';
+      valid = false;
+    }
+
+    return valid;
+  }
+
+  function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+</script>
+
+        <!-- 
+    - #GO TO TOP
+  -->
+
+        <a href="#top" class="go-top-btn" data-go-top>
+            <ion-icon name="arrow-up-outline"></ion-icon>
+        </a>
+
+        <!-- 
+    - custom js link
+  -->
+        <script src="./assets/js/script.js"></script>
+
+        <!-- 
+    - ionicon link
+  -->
+        <script type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    </body>
+
+</html>
