@@ -6,13 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-comm - Find your choice</title>
-    <!-- <link
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous" /> -->
-    <!-- <link rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+      crossorigin="anonymous" /> 
+     <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
 
     <!-- 
     - favicon
@@ -22,6 +26,22 @@
     <!-- 
     - custom css link
   -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/font.awesome.min.css">
+    <!-- Linear Icons CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/linearicons.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/animate.min.css">
+    <!-- Jquery ui CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css">
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- 
@@ -34,536 +54,746 @@
       rel="stylesheet">
   </head>
 
-  <body id="top">
+  <body>
+    <!-- - #HEADER -->
 
-    <!-- 
-    - #HEADER
-  -->
 
-    <header class="header" data-header>
-      <div class="container">
+    <!-- Header Area Start Here -->
+    <header class="main-header-area">
+      <!-- Main Header Area Start -->
+      <div class="main-header header-sticky">
+          <div class="container custom-area">
+              <div class="row align-items-center">
+                  <div class="col-lg-2 col-xl-2 col-md-6 col-6 col-custom">
+                      <div class="header-logo d-flex align-items-center">
+                          <a href="index.html">
+                              <img class="img-full" src="/favicon.svg" alt="Header Logo">
+                              <h1 style="color: black;">Ecommerce</h1 style="color: black;">
+                          </a>
+                      </div>
+                  </div>
+                  <div class="col-lg-8 d-none d-lg-flex justify-content-center col-custom">
+                      <nav class="main-nav d-none d-lg-flex">
+                          <ul class="nav">
+                              <li>
+                                  <a href="index.html" class="active">
+                                      <span class="menu-text"> Home</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <span class="menu-text">AllProducts</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="">
+                                      <span class="menu-text">Womens</span>
+                                      <!-- <i class="fa fa-angle-down"></i> -->
+                                  </a>
+                                  <ul class="dropdown-submenu dropdown-hover">
+                                      <li><a href="blog.html">Dresses</a></li>
+                                      <li><a href="blog-list-right-sidebar.html">Pants</a></li>
+                                      <li><a href="blog-list-fullwidth.html">Skirts</a></li>
+                                  </ul>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <span class="menu-text"> Mens</span>
+                                      <!-- <i class="fa fa-angle-down"></i> -->
+                                  </a>
+                                  <ul class="dropdown-submenu dropdown-hover">
+                                      <li><a href="contact-us.html">Shirts</a></li>
+                                      <li><a href="my-account.html">Pants</a></li>
+                                      <li><a href="frequently-questions.html">Hoodies</a></li>
+                                      <!-- <li><a href="login.html">Login</a></li>
+                                      <li><a href="register.html">Register</a></li> -->
+                                  </ul>
+                              </li>
+                              <li>
+                                  <a href="about-us.html">
+                                      <span class="menu-text">Kids</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="contact-us.html">
+                                      <span class="menu-text">Contact Us</span>
+                                  </a>
+                              </li>
+                          </ul>
+                      </nav>
+                  </div>
+                  <div class="col-lg-2 col-md-6 col-6 col-custom">
+                      <div class="header-right-area main-nav">
+                          <ul class="nav">
+                              <li class="minicart-wrap">
+                                  <a href="#" class="minicart-btn toolbar-btn">
+                                      <i class="fa fa-shopping-cart"></i>
+                                      <span class="cart-item_count">3</span>
+                                  </a>
+                                  <div class="cart-item-wrapper dropdown-sidemenu dropdown-hover-2">
+                                      <div class="single-cart-item">
+                                          <div class="cart-img">
+                                              <a href="cart.html"><img src="assets/images/cart/1.jpg" alt=""></a>
+                                          </div>
+                                          <div class="cart-text">
+                                              <h5 class="title"><a href="cart.html">Odio tortor consequat</a></h5>
+                                              <div class="cart-text-btn">
+                                                  <div class="cart-qty">
+                                                      <span>1×</span>
+                                                      <span class="cart-price">$98.00</span>
+                                                  </div>
+                                                  <button type="button"><i class="fa fa-trash-o"></i></button>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="single-cart-item">
+                                          <div class="cart-img">
+                                              <a href="cart.html"><img src="assets/images/cart/2.jpg" alt=""></a>
+                                          </div>
+                                          <div class="cart-text">
+                                              <h5 class="title"><a href="cart.html">Integer eget augue</a></h5>
+                                              <div class="cart-text-btn">
+                                                  <div class="cart-qty">
+                                                      <span>1×</span>
+                                                      <span class="cart-price">$98.00</span>
+                                                  </div>
+                                                  <button type="button"><i class="fa fa-trash-o"></i></button>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="single-cart-item">
+                                          <div class="cart-img">
+                                              <a href="cart.html"><img src="assets/images/cart/3.jpg" alt=""></a>
+                                          </div>
+                                          <div class="cart-text">
+                                              <h5 class="title"><a href="cart.html">Eleifend quam</a></h5>
+                                              <div class="cart-text-btn">
+                                                  <div class="cart-qty">
+                                                      <span>1×</span>
+                                                      <span class="cart-price">$98.00</span>
+                                                  </div>
+                                                  <button type="button"><i class="fa fa-trash-o"></i></button>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="cart-price-total d-flex justify-content-between">
+                                          <h5>Total :</h5>
+                                          <h5>$166.00</h5>
+                                      </div>
+                                      <div class="cart-links d-flex justify-content-between">
+                                          <a class="btn product-cart button-icon flosun-button dark-btn" href="cart.html">View cart</a>
+                                          <a class="btn flosun-button secondary-btn rounded-0" href="checkout.html">Checkout</a>
+                                      </div>
+                                  </div>
+                              </li>
+                              <li class="sidemenu-wrap">
+                                <a href="#"><i class="fa fa-user"></i> </a>
+                              </li>
+                              <li class="sidemenu-wrap">
+                                  <a href="#"><i class="fa fa-search"></i> </a>
+                                  <ul class="dropdown-sidemenu dropdown-hover-2 dropdown-search">
+                                      <li>
+                                          <form action="#">
+                                              <input name="search" id="search" placeholder="Search" type="text">
+                                              <button type="submit"><i class="fa fa-search"></i></button>
+                                          </form>
+                                      </li>
+                                  </ul>
+                              </li>
+                              <li class="account-menu-wrap d-none d-lg-flex">
+                                  <a href="#" class="off-canvas-menu-btn">
+                                      <i class="fa fa-bars"></i>
+                                  </a>
+                              </li>
+                              <li class="mobile-menu-btn d-lg-none">
+                                  <a class="off-canvas-btn" href="#">
+                                      <i class="fa fa-bars"></i>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Main Header Area End -->
+      <!-- off-canvas menu start -->
+      <aside class="off-canvas-wrapper" id="mobileMenu">
+        <div class="off-canvas-overlay"></div>
+        <div class="off-canvas-inner-content">
+            <div class="btn-close-off-canvas">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="off-canvas-inner">
+                <div class="search-box-offcanvas">
+                    <form>
+                        <input type="text" placeholder="Search product...">
+                        <button class="search-btn"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <!-- mobile menu start -->
+                <div class="mobile-navigation">
+                    <!-- mobile menu navigation start -->
+                    <nav>
+                        <ul class="mobile-menu" class="active">
+                            <li class="menu-item-has-children"><a href="#">Home</a>
+                            </li>
+                            <li class="menu-item-has-children"><a href="#">AllProducts</a>
+                            </li>
+                            <li class="menu-item-has-children "><a href="#">Womens</a>
+                                <ul class="dropdown">
+                                    <li><a href="blog.html">Dresses</a></li>
+                                    <li><a href="blog-list-right-sidebar.html">Pants</a></li>
+                                    <li><a href="blog-list-fullwidth.html">Skirts</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children "><a href="#">Mens</a>
+                                <ul class="dropdown">
+                                    <li><a href="frequently-questions.html">Shirts</a></li>
+                                    <li><a href="my-account.html">Pants</a></li>
+                                    <li><a href="login-register.html">Hoodies</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about-us.html">Kids</a></li>
+                            <li><a href="contact-us.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!-- mobile menu navigation end -->
+                </div>
+                <!-- mobile menu end -->
+                <div class="offcanvas-widget-area">
+                    <div class="switcher">
+                        <div class="language">
+                            <span class="switcher-title">Language: </span>
+                            <div class="switcher-menu">
+                                <ul>
+                                    <li><a href="#">English</a>
+                                        <ul class="switcher-dropdown">
+                                            <li><a href="#">INDIA</a></li>
+                                            <li><a href="#">USA</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-info-wrap text-left text-black">
+                        <ul class="address-info">
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <a href="#">+91 1234567890</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                <a href="#">Ecommerce@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+      <!-- off-canvas menu end -->
+      <!-- off-canvas menu start -->
+      <aside class="off-canvas-menu-wrapper" id="sideMenu">
+        <div class="off-canvas-overlay"></div>
+        <div class="off-canvas-inner-content">
+            <div class="off-canvas-inner">
+                <div class="btn-close-off-canvas">
+                    <i class="fa fa-times"></i>
+                </div>
+                <!-- offcanvas widget area start -->
+                <div class="offcanvas-widget-area">
+                    <ul class="menu-top-menu">
+                        <li><a href="index.html">About Us</a></li>
+                    </ul>
+                    <p class="desc-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="switcher">
+                        <div class="language">
+                            <span class="switcher-title">Language: </span>
+                            <div class="switcher-menu">
+                                <ul>
+                                    <li><a href="#">English</a>
+                                        <ul class="switcher-dropdown">
+                                            <li><a href="#">INDIA</a></li>
+                                            <li><a href="#">USA</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-info-wrap text-left text-black">
+                        <ul class="address-info">
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <a href="info%40yourdomain.html">+91 1234567890</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                <a href="info%40yourdomain.html">Ecommerce@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- offcanvas widget area end -->
+            </div>
+        </div>
+    </aside>
+      <!-- off-canvas menu end -->
+  </header>
+  <!-- Header Area End Here -->
+    <main>
+      <article>
 
-        <div class="overlay" data-overlay></div>
-        <h2 style="display:inline-block;" class="logo">
-          <img src="favicon.svg">
-          Ecommerce
-        </h2>
+        <!--       
+F        - #HERO
+      -->
 
-        <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
-          <ion-icon name="menu-outline"></ion-icon>
-        </button>
+        <section class="section hero"
+          style="background-image: url('https://img.freepik.com/free-photo/shopping-concept-close-up-portrait-young-beautiful-attractive-redhair-girl-smiling-looking-camera_1258-118763.jpg?w=1380&t=st=1707911166~exp=1707911766~hmac=4fe9c4ca0e1383f5939a3175d4eb9cd5ef66a8e2db9a07fc25aa193cf862cfe6')">
+          <div class="container">
 
-        <nav class="navbar" data-navbar>
+            <h2 class="h1 hero-title">
+              New Fashion<strong>Collection</strong>
+            </h2>
 
-          <button class="nav-close-btn" data-nav-close-btn
-            aria-label="Close Menu">
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
+            <p class="hero-text">
+              Competently expedite alternative benefits whereas leading-edge
+              catalysts for change. Globally leverage
+              existing an
+              expanded array of leadership.
+            </p>
 
-          <a href="#" class="logo">
-            <img src="favicon.svg">
-          </a>
+            <button class="btn btn-primary">
+              <span>Shop Now</span>
 
-          <ul class="navbar-list">
+              <ion-icon name="arrow-forward-outline"
+                aria-hidden="true"></ion-icon>
+            </button>
 
-            <li class="navbar-item">
-              <a href="#" class="navbar-link">Home</a>
-            </li>
-            <li class="navbar-item">
-              <a href="Allproducts.html" class="navbar-link">AllProducts</a>
-            </li>
-              <li class="navbar-item">
-                <a href="#" class="navbar-link">Mens</a>
+          </div>
+        </section>
+
+        <!-- 
+        - #COLLECTION
+      -->
+
+        <section class="section collection">
+          <div class="container">
+
+            <ul class="collection-list has-scrollbar">
+
+              <li>
+                <div class="collection-card"
+                  style="background-image: url('https://st.depositphotos.com/1550494/2604/i/450/depositphotos_26043279-stock-photo-retro-fifties-summer-fashion-man.jpg')">
+                  <h3 class="h4 card-title"></h3>
+
+                  <a href="#" class="btn btn-secondary">
+                    <span>Men Collections</span>
+
+                    <ion-icon name="arrow-forward-outline"
+                      aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
               </li>
-              <li class="navbar-item">
-                <a href="#" class="navbar-link">Womens</a>
+
+              <li>
+                <div class="collection-card"
+                  style="background-image: url('https://i.pinimg.com/736x/5c/77/63/5c77639090b3f02c8684ceda8d3c5577.jpg')">
+                  <h3 class="h4 card-title"></h3>
+
+                  <a href="#" class="btn btn-secondary">
+                    <span>Women Collections</span>
+
+                    <ion-icon name="arrow-forward-outline"
+                      aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
               </li>
-              <li class="navbar-item">
-                <a href="#" class="navbar-link">Kids</a>
-              </li>
-              <li class="navbar-item">
-                <a href="Contactus.html" class="navbar-link">Contact</a>
+
+              <li>
+                <div class="collection-card"
+                  style="background-image: url('https://thumbs.dreamstime.com/b/large-group-kids-friends-boys-girls-running-park-sunny-summer-day-casual-clothes-large-group-kids-friends-155743585.jpg')">
+                  <h3 class="h4 card-title"></h3>
+
+                  <a href="#" class="btn btn-secondary">
+                    <span>Kids Collections</span>
+
+                    <ion-icon name="arrow-forward-outline"
+                      aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
               </li>
 
             </ul>
 
-            <ul class="nav-action-list">
+          </div>
+        </section>
+
+        <!-- 
+        - #PRODUCT
+      -->
+
+        <section class="section product"></section>
+
+        <!-- 
+        - #CTA
+      -->
+
+        <section class="section cta">
+          <div class="container">
+
+            <ul class="cta-list">
 
               <li>
-                <button class="nav-action-btn">
-                  <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
-                  <button type="submit"><i class="fa fa-search"></i></button>
+                <div class="cta-card"
+                  style="background-image: url('https://img.freepik.com/free-vector/fashion-sale-with-discount-template_23-2148936503.jpg')">
+                  <p class="card-subtitle">Gucci Collection</p>
 
-                  <span class="nav-action-text">Search</span>
-                </button>
+                  <h3 class="h2 card-title">The Summer Sale Off 50%</h3>
+
+                  <a href="#" class="btn btn-link">
+                    <span>Shop Now</span>
+
+                    <ion-icon name="arrow-forward-outline"
+                      aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
               </li>
 
               <li>
-                <a href="#" class="nav-action-btn">
-                  <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                <div class="cta-card"
+                  style="background-image: url('https://d1csarkz8obe9u.cloudfront.net/posterpreviews/kids-fashion-sale-facebook-post-poster-template-b3c3fb6bab70186a311fbdbdb5e9c187_screen.jpg?ts=1561506446')">
+                  <p class="card-subtitle">Kids cool Fashion</p>
 
-                  <span class="nav-action-text">Login / Register</span>
+                  <h3 class="h2 card-title">Makes Yourself Keep
+                    fashionable</h3>
+
+                  <a href="#" class="btn btn-link">
+                    <span>Shop Now</span>
+
+                    <ion-icon name="arrow-forward-outline"
+                      aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+        </section>
+
+        <!-- 
+        - #SPECIAL
+      -->
+
+        <section class="section special"></section>
+
+        <!-- 
+        - #SERVICE
+      -->
+
+        <section class="section service">
+          <div class="container">
+
+            <ul class="service-list">
+
+              <li class="service-item">
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <img src="./assets/images/service-1.png" width="53"
+                      height="28" loading="lazy" alt="Service icon">
+                  </div>
+
+                  <div>
+                    <h3 class="h4 card-title">Free Shiping</h3>
+
+                    <p class="card-text">
+                      All orders over <span>Rs.2500</span>
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <img src="./assets/images/service-2.png" width="43"
+                      height="35" loading="lazy" alt="Service icon">
+                  </div>
+
+                  <div>
+                    <h3 class="h4 card-title">Quick Payment</h3>
+
+                    <p class="card-text">
+                      100% secure payment
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <img src="./assets/images/service-3.png" width="40"
+                      height="40" loading="lazy" alt="Service icon">
+                  </div>
+
+                  <div>
+                    <h3 class="h4 card-title">Free Returns</h3>
+
+                    <p class="card-text">
+                      Money back in 30 days
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <img src="./assets/images/service-4.png" width="40"
+                      height="40" loading="lazy" alt="Service icon">
+                  </div>
+
+                  <div>
+                    <h3 class="h4 card-title">24/7 Support</h3>
+
+                    <p class="card-text">
+                      Get Quick Support
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+
+      <div class="footer-top section">
+        <div class="container">
+
+          <div class="footer-brand">
+
+            <!-- <a href="#" class="logo">
+              <h1>Ecommerce Website</h1>
+            </a> -->
+            <h2 style="display:inline-block;" class="logo">
+              <img src="favicon.svg">
+              Ecommerce
+            </h2>
+
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
                 </a>
               </li>
 
               <li>
-                <button class="nav-action-btn">
-                  <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
-
-                  <span class="nav-action-text">Wishlist</span>
-
-                  <data class="nav-action-badge" value="5"
-                    aria-hidden="true">5</data>
-                </button>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
               </li>
 
               <li>
-                <button class="nav-action-btn">
-                  <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
 
-                  <data class="nav-action-text" value="318.00">Basket:
-                    <strong>$318.00</strong></data>
-
-                  <data class="nav-action-badge" value="4"
-                    aria-hidden="true">4</data>
-                </button>
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
               </li>
 
             </ul>
 
-          </nav>
-
-        </div>
-      </header>
-
-      <main>
-        <article>
-
-          <!--       
-F        - #HERO
-      -->
-
-          <section class="section hero"
-            style="background-image: url('https://img.freepik.com/free-photo/shopping-concept-close-up-portrait-young-beautiful-attractive-redhair-girl-smiling-looking-camera_1258-118763.jpg?w=1380&t=st=1707911166~exp=1707911766~hmac=4fe9c4ca0e1383f5939a3175d4eb9cd5ef66a8e2db9a07fc25aa193cf862cfe6')">
-            <div class="container">
-
-              <h2 class="h1 hero-title">
-                New Fashion<strong>Collection</strong>
-              </h2>
-
-              <p class="hero-text">
-                Competently expedite alternative benefits whereas leading-edge
-                catalysts for change. Globally leverage
-                existing an
-                expanded array of leadership.
-              </p>
-
-              <button class="btn btn-primary">
-                <span>Shop Now</span>
-
-                <ion-icon name="arrow-forward-outline"
-                  aria-hidden="true"></ion-icon>
-              </button>
-
-            </div>
-          </section>
-
-          <!-- 
-        - #COLLECTION
-      -->
-
-          <section class="section collection">
-            <div class="container">
-
-              <ul class="collection-list has-scrollbar">
-
-                <li>
-                  <div class="collection-card"
-                    style="background-image: url('https://st.depositphotos.com/1550494/2604/i/450/depositphotos_26043279-stock-photo-retro-fifties-summer-fashion-man.jpg')">
-                    <h3 class="h4 card-title"></h3>
-
-                    <a href="#" class="btn btn-secondary">
-                      <span>Men Collections</span>
-
-                      <ion-icon name="arrow-forward-outline"
-                        aria-hidden="true"></ion-icon>
-                    </a>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="collection-card"
-                    style="background-image: url('https://i.pinimg.com/736x/5c/77/63/5c77639090b3f02c8684ceda8d3c5577.jpg')">
-                    <h3 class="h4 card-title"></h3>
-
-                    <a href="#" class="btn btn-secondary">
-                      <span>Women Collections</span>
-
-                      <ion-icon name="arrow-forward-outline"
-                        aria-hidden="true"></ion-icon>
-                    </a>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="collection-card"
-                    style="background-image: url('https://thumbs.dreamstime.com/b/large-group-kids-friends-boys-girls-running-park-sunny-summer-day-casual-clothes-large-group-kids-friends-155743585.jpg')">
-                    <h3 class="h4 card-title"></h3>
-
-                    <a href="#" class="btn btn-secondary">
-                      <span>Kids Collections</span>
-
-                      <ion-icon name="arrow-forward-outline"
-                        aria-hidden="true"></ion-icon>
-                    </a>
-                  </div>
-                </li>
-
-              </ul>
-
-            </div>
-          </section>
-
-          <!-- 
-        - #PRODUCT
-      -->
-
-          <section class="section product"></section>
-
-          <!-- 
-        - #CTA
-      -->
-
-          <section class="section cta">
-            <div class="container">
-
-              <ul class="cta-list">
-
-                <li>
-                  <div class="cta-card"
-                    style="background-image: url('https://img.freepik.com/free-vector/fashion-sale-with-discount-template_23-2148936503.jpg')">
-                    <p class="card-subtitle">Gucci Collection</p>
-
-                    <h3 class="h2 card-title">The Summer Sale Off 50%</h3>
-
-                    <a href="#" class="btn btn-link">
-                      <span>Shop Now</span>
-
-                      <ion-icon name="arrow-forward-outline"
-                        aria-hidden="true"></ion-icon>
-                    </a>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="cta-card"
-                    style="background-image: url('https://d1csarkz8obe9u.cloudfront.net/posterpreviews/kids-fashion-sale-facebook-post-poster-template-b3c3fb6bab70186a311fbdbdb5e9c187_screen.jpg?ts=1561506446')">
-                    <p class="card-subtitle">Kids cool Fashion</p>
-
-                    <h3 class="h2 card-title">Makes Yourself Keep
-                      fashionable</h3>
-
-                    <a href="#" class="btn btn-link">
-                      <span>Shop Now</span>
-
-                      <ion-icon name="arrow-forward-outline"
-                        aria-hidden="true"></ion-icon>
-                    </a>
-                  </div>
-                </li>
-
-              </ul>
-
-            </div>
-          </section>
-
-          <!-- 
-        - #SPECIAL
-      -->
-
-          <section class="section special"></section>
-
-          <!-- 
-        - #SERVICE
-      -->
-
-          <section class="section service">
-            <div class="container">
-
-              <ul class="service-list">
-
-                <li class="service-item">
-                  <div class="service-card">
-
-                    <div class="card-icon">
-                      <img src="./assets/images/service-1.png" width="53"
-                        height="28" loading="lazy" alt="Service icon">
-                    </div>
-
-                    <div>
-                      <h3 class="h4 card-title">Free Shiping</h3>
-
-                      <p class="card-text">
-                        All orders over <span>$150</span>
-                      </p>
-                    </div>
-
-                  </div>
-                </li>
-
-                <li class="service-item">
-                  <div class="service-card">
-
-                    <div class="card-icon">
-                      <img src="./assets/images/service-2.png" width="43"
-                        height="35" loading="lazy" alt="Service icon">
-                    </div>
-
-                    <div>
-                      <h3 class="h4 card-title">Quick Payment</h3>
-
-                      <p class="card-text">
-                        100% secure payment
-                      </p>
-                    </div>
-
-                  </div>
-                </li>
-
-                <li class="service-item">
-                  <div class="service-card">
-
-                    <div class="card-icon">
-                      <img src="./assets/images/service-3.png" width="40"
-                        height="40" loading="lazy" alt="Service icon">
-                    </div>
-
-                    <div>
-                      <h3 class="h4 card-title">Free Returns</h3>
-
-                      <p class="card-text">
-                        Money back in 30 days
-                      </p>
-                    </div>
-
-                  </div>
-                </li>
-
-                <li class="service-item">
-                  <div class="service-card">
-
-                    <div class="card-icon">
-                      <img src="./assets/images/service-4.png" width="40"
-                        height="40" loading="lazy" alt="Service icon">
-                    </div>
-
-                    <div>
-                      <h3 class="h4 card-title">24/7 Support</h3>
-
-                      <p class="card-text">
-                        Get Quick Support
-                      </p>
-                    </div>
-
-                  </div>
-                </li>
-
-              </ul>
-
-            </div>
-          </section>
-        </article>
-      </main>
-
-      <!-- 
-    - #FOOTER
-  -->
-
-      <footer class="footer">
-
-        <div class="footer-top section">
-          <div class="container">
-
-            <div class="footer-brand">
-
-              <!-- <a href="#" class="logo">
-              <h1>Ecommerce Website</h1>
-            </a> -->
-              <h2 style="display:inline-block;" class="logo">
-                <img src="favicon.svg">
-                Ecommerce
-              </h2>
-
-              <ul class="social-list">
-
-                <li>
-                  <a href="#" class="social-link">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="social-link">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="social-link">
-                    <ion-icon name="logo-pinterest"></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="social-link">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                  </a>
-                </li>
-
-              </ul>
-
-            </div>
-
-            <div class="footer-link-box">
-              <ul class="footer-list">
-
-                <li>
-                  <p class="footer-list-title">Womens</p>
-                </li>
-
-                <li>
-                  <a href="#" class="footer-link">
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
-
-                    <span class="footer-link-text">Dress</span>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="footer-link">
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
-
-                    <span class="footer-link-text">Pants</span>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="footer-link">
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
-
-                    <span class="footer-link-text">Skirts</span>
-                  </a>
-                </li>
-              </ul>
-
-              <div class="footer-list">
-
-                <li>
-                  <p class="footer-list-title">Mens</p>
-                </li>
-
-                <li>
-                  <a href="#" class="footer-link">
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
-
-                    <span class="footer-link-text">Shirts</span>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="footer-link">
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
-
-                    <span class="footer-link-text">Pants</span>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="footer-link">
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
-
-                    <span class="footer-link-text">Hoodies</span>
-                  </a>
-                </li>
-
-              </div>
-              <div class="footer-list">
-
-                <li>
-                  <p class="footer-list-title">Kids</p>
-                </li>
-              </div>
-
-              <ul class="footer-list">
-
-                <li>
-                  <p class="footer-list-title">Links</p>
-                </li>
-                <li>
-                  <a href="#" class="footer-link">
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
-
-                    <span class="footer-link-text">Home</span>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="footer-link">
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
-
-                    <span class="footer-link-text">Login</span>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="footer-link">
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
-
-                    <span class="footer-link-text">Contact</span>
-                  </a>
-                </li>
-
-              </ul>
-            </div>
-
           </div>
-        </div>
 
-        <div class="footer-bottom">
-          <div class="container">
+          <div class="footer-link-box">
+            <ul class="footer-list">
 
-            <p class="copyright">
-              &copy; 2024 <a href="#"
-                class="copyright-link">EcommerceWebsite</a>.
-              All Rights Reserved
-            </p>
+              <li>
+                <p class="footer-list-title">Womens</p>
+              </li>
 
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                  <span class="footer-link-text">Dress</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                  <span class="footer-link-text">Pants</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                  <span class="footer-link-text">Skirts</span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="footer-list">
+
+              <li>
+                <p class="footer-list-title">Mens</p>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                  <span class="footer-link-text">Shirts</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                  <span class="footer-link-text">Pants</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                  <span class="footer-link-text">Hoodies</span>
+                </a>
+              </li>
+
+            </div>
+            <div class="footer-list">
+
+              <li>
+                <p class="footer-list-title">Kids</p>
+              </li>
+            </div>
+
+            <ul class="footer-list">
+
+              <li>
+                <p class="footer-list-title">Links</p>
+              </li>
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                  <span class="footer-link-text">Home</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                  <span class="footer-link-text">Login</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                  <span class="footer-link-text">Contact</span>
+                </a>
+              </li>
+
+            </ul>
           </div>
+
         </div>
+      </div>
 
-      </footer>
+      <div class="footer-bottom">
+        <div class="container">
 
-      <!-- 
+          <p class="copyright">
+            &copy; 2024 <a href="#"
+              class="copyright-link">EcommerceWebsite</a>.
+            All Rights Reserved
+          </p>
+
+        </div>
+      </div>
+
+    </footer>
+
+    <!-- 
     - #GO TO TOP
   -->
 
-      <a href="#top" class="go-top-btn" data-go-top>
-        <ion-icon name="arrow-up-outline"></ion-icon>
-      </a>
+  <a href="#top" class="go-top-btn" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+</a>
 
-      <!-- 
+    <!-- 
     - custom js link
-  -->
-      <script src="./assets/js/script.js"></script>
+    -->
 
-      <!-- 
+  <!-- jQuery JS -->
+  <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+  <!-- jQuery Migrate JS -->
+  <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+  <!-- Modernizer JS -->
+  <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+
+  <!-- Swiper Slider JS -->
+  <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+  <!-- nice select JS -->
+  <script src="assets/js/plugins/nice-select.min.js"></script>
+  <!-- Ajaxchimpt js -->
+  <script src="assets/js/plugins/jquery.ajaxchimp.min.js"></script>
+  <!-- Jquery Ui js -->
+  <script src="assets/js/plugins/jquery-ui.min.js"></script>
+  <!-- Jquery Countdown js -->
+  <script src="assets/js/plugins/jquery.countdown.min.js"></script>
+  <!-- jquery magnific popup js -->
+  <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script> 
+  
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
     - ionicon link
   -->
-      <script type="module"
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    </body>
+  </body>
 
-  </html>
+</html>
