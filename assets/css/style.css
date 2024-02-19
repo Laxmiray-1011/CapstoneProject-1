@@ -402,7 +402,7 @@ body {
 
 
 /*----------------------------------------*/
-/*    04 - Layout - Header
+/*  Layout - Header
 /*----------------------------------------*/
 /*-- Main Header Area --*/
 .main-header-area .header-logo img {
@@ -1508,7 +1508,25 @@ body {
 
 .product-list {
   display: grid;
-  gap: 50px 25px;
+ gap: 50px 25px;
+}
+
+.add-to-cart-button {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #007bff; /* Example color, replace with your theme color */
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #ace626; /* Example color, replace with your theme color */
 }
 
 
@@ -1643,47 +1661,6 @@ body {
   display: inline-block;
   color: var(--bittersweet);
 }
-
-
-
-
-
-/*-----------------------------------*\
- * #INSTA POST
-\*-----------------------------------*/
-
-.insta-post-list {
-  gap: 0;
-}
-
-.insta-post-list .insta-post-item {
-  position: relative;
-  min-width: 33.33%;
-  aspect-ratio: 1 / 1;
-}
-
-.insta-post-link {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  background: var(--oxford-blue_60);
-  opacity: 0;
-  transition: var(--transition-1);
-}
-
-.insta-post-link ion-icon {
-  color: var(--white);
-  font-size: 40px;
-}
-
-.insta-post-link:is(:hover, :focus) {
-  opacity: 1;
-}
-
-
-
-
 
 /*-----------------------------------*\
  * #FOOTER
@@ -1923,7 +1900,7 @@ a.footer-link:is(:hover, :focus) {
    */
 
   .product-list {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 
 
@@ -1945,13 +1922,99 @@ a.footer-link:is(:hover, :focus) {
   }
 
 
-
   /**
-   * INSTA POST
+   * FOOTER
    */
 
-  .insta-post-list .insta-post-item {
-    min-width: 25%;
+  .footer-brand .logo {
+    margin-bottom: 0;
+  }
+
+  .footer-brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-link-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+  }
+
+}
+/**
+ * responsive for larger than 320px screen
+ */
+
+ @media (min-width: 320px) {
+
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+
+    /**
+     * typography
+     */
+
+    --fs-1: 4rem;
+
+  }
+
+
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container {
+    max-width: 650px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .has-scrollbar>li {
+    min-width: calc(50% - 12.5px);
+  }
+
+
+
+  /**
+   * HERO
+   */
+
+  .hero-text {
+    font-size: var(--fs-7);
+  }
+
+
+
+  /**
+   * PRODUCTS
+   */
+
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+
+  /**
+   * CTA
+   */
+
+  .cta-card {
+    text-align: left;
+  }
+
+  .cta-card .card-title {
+    max-width: 14ch;
+  }
+
+  .cta-card .btn-link {
+    margin-inline: 0;
   }
 
 
@@ -1977,6 +2040,9 @@ a.footer-link:is(:hover, :focus) {
   }
 
 }
+
+
+
 
 
 
@@ -2015,6 +2081,9 @@ a.footer-link:is(:hover, :focus) {
   .h4 {
     --fs-5: 2rem;
   }
+
+  /* Collection */
+
 
 
 
@@ -2221,15 +2290,6 @@ a.footer-link:is(:hover, :focus) {
   }
 
 
-
-  /**
-   * INSTA POST
-   */
-
-  .insta-post-list .insta-post-item {
-    min-width: 16.666%;
-  }
-
 }
 
 
@@ -2293,7 +2353,7 @@ a.footer-link:is(:hover, :focus) {
    */
 
   .product-list {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 
 
@@ -2303,7 +2363,7 @@ a.footer-link:is(:hover, :focus) {
    */
 
   .special-banner {
-    min-width: calc(25% - 25px);
+    min-width: calc(200% - 25px);
   }
 
   .special-product .has-scrollbar>li {
@@ -2342,9 +2402,5 @@ a.footer-link:is(:hover, :focus) {
     grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
     gap: 50px;
   }
-
-  /* 
-  Navbar */
-
 
 }
