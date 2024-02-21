@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 981px;
+      margin: 20px auto ;
+      padding: 20px;
+      background-color:#e9e3e5;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .item-list,
+    .summary {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .item-list h2,
+    .summary h2 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 1.2em;
+      color: #333;
+      text-align: center
+    }
+
+    .item {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .item-details {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .item-name {
+      font-weight: bold;
+      color: #333;
+      margin: 0;
+    }
+
+    .item-price {
+      color: #555;
+    }
+
+    .delete-btn,
+    .quantity-adjust button {
+      padding: 5px 10px;
+      border: none;
+      background-color: #64dc35;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .delete-btn:hover,
+    .quantity-adjust button:hover {
+      background-color: #28c823;
+    }
+
+    .quantity-adjust {
+      display: flex;
+      align-items: center;
+    }
+
+    .quantity-adjust button {
+      font-weight: bold;
+    }
+
+    .quantity-adjust input {
+      width: 40px;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 0 5px;
+    }
+
+    .summary {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .summary p {
+      margin: 5px 0;
+    }
+
+    .summary hr {
+      margin: 10px 0;
+      border: none;
+      border-top: 1px solid #ccc;
+    }
+
+    .checkout-btn {
+      padding: 10px;
+      border: none;
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      margin-top: auto;
+    }
+
+    .checkout-btn:hover {
+      background-color: #0056b3;
+    }
+
+    @media only screen and (min-width: 768px) {
+      .grid-container {
+        grid-template-columns: 1fr 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My Cart</h1>
+    <div class="grid-container">
+      <div class="item-list">
+        <h2>Items in Cart</h2>
+        <hr>
+        <div class="item">
+          <img src="https://shop.royalalberthall.com/cdn/shop/products/Royal_Albert_Hall_T-Shirt_300x300.jpg?v=1550429856" alt="Item 2">
+          <div class="item-details">
+            <p class="item-name"> Black Tshirt</p>
+            <p class="item-price">$20</p>
+          </div>
+          <div class="quantity-adjust">
+            <button>-</button>
+            <input type="text" value="1">
+            <button>+</button>
+          </div>
+          <button class="delete-btn"><i class="fas fa-trash-alt"></i></button>
+        </div>
+        <!-- Add more items here -->
+      </div>
+      <div class="summary">
+        <h2>Summary</h2>
+        <hr>
+        <p>Subtotal: $45</p>
+        <p>Shipping: $5</p>
+        <hr>
+        <p>Total: $50</p>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
