@@ -22,9 +22,9 @@
 
 
 
-// /**
-//  * header & go top btn active on page scroll
-//  */
+/**
+ * header & go top btn active on page scroll
+ */
 
 // const header = document.querySelector("[data-header]");
 // const goTopBtn = document.querySelector("[data-go-top]");
@@ -38,6 +38,7 @@
 //     goTopBtn.classList.remove("active");
 //   }
 // });
+
 (function($){
   	/*----------------------------------------
 	   Sticky Menu Activation
@@ -143,3 +144,30 @@
 	});
 
 })(jQuery);
+
+// Function to load and inject header
+function loadHeader() {
+    fetch('Header.html') // Load the header HTML file
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('header').innerHTML = html; // Inject the header into the designated div
+        });
+}
+
+// Function to load and inject footer
+function loadFooter() {
+    fetch('Footer.html') // Load the footer HTML file
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('footer').innerHTML = html; // Inject the footer into the designated div
+        });
+}
+
+// Use DOMContentLoaded event listener to ensure the DOM is fully loaded before injecting header and footer
+document.addEventListener('DOMContentLoaded', function() {
+    loadHeader(); // Call the function to load and inject the header
+    loadFooter(); // Call the function to load and inject the footer
+});
+
+
+  
