@@ -1655,6 +1655,7 @@ body {
   width: 50px;
   height: 2px;
   margin-top: 10px;
+  
 }
 
 .footer-link {
@@ -1699,33 +1700,6 @@ a.footer-link:is(:hover, :focus) {
   color: var(--onyx);
 }
 
-.newsletter-text {
-  color: var(--onyx);
-  line-height: 1.7;
-  margin-bottom: 20px;
-}
-
-.newsletter-form {
-  position: relative;
-}
-
-.newsletter-input {
-  background: var(--white);
-  color: var(--onyx);
-  padding: 15px 25px;
-  padding-right: 120px;
-}
-
-.newsletter-form .btn-primary {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  font-family: var(--ff-josefin-sans);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-600);
-  padding-inline: 20px;
-}
 
 .footer-bottom {
   background: var(--rich-black-fogra-29);
@@ -1868,7 +1842,7 @@ a.footer-link:is(:hover, :focus) {
 
   .footer-brand {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
 
@@ -1966,7 +1940,7 @@ a.footer-link:is(:hover, :focus) {
 
   .footer-brand {
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
   }
 
@@ -2108,7 +2082,7 @@ a.footer-link:is(:hover, :focus) {
     --fs-5: 2rem;
   }
 
-  /* Collection */
+ 
 
 
 
