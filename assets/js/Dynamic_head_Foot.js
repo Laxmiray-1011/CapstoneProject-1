@@ -1,23 +1,34 @@
-// Function to load and Add header
+
+
+// Function to load header HTML content dynamically
 function loadHeader() {
-    fetch('/Header.html') // Load the header HTML file
+    // Fetch the header HTML file
+    fetch('Header.html')
         .then(response => response.text())
         .then(html => {
-            document.getElementById('header').innerHTML = html; // Add the header into the designated div
+            // Select the header element by its class name
+            const headerElement = document.querySelector('.header');
+            // Set the innerHTML of the header element to the fetched HTML content
+            headerElement.innerHTML = html;
         });
 }
 
-// Function to load and Add footer
+// Call the function to load the header
+loadHeader();
+
+// Function to load footer HTML content dynamically
 function loadFooter() {
-    fetch('/Footer.html') // Load the footer HTML file
+    // Fetch the footer HTML file
+    fetch('Footer.html')
         .then(response => response.text())
         .then(html => {
-            document.getElementById('footer').innerHTML = html; // Add the footer into the designated div
+            // Select the footer element by its class name
+            const footerElement = document.querySelector('.footer');
+            // Set the innerHTML of the footer element to the fetched HTML content
+            footerElement.innerHTML = html;
         });
 }
 
-// Use DOMContentLoaded event listener to ensure the DOM is fully loaded before Adding header and footer
-document.addEventListener('DOMContentLoaded', function() {
-    loadHeader(); // Call the function to load and Add the header
-    loadFooter(); // Call the function to load and Add the footer
-});
+// Call the function to load the footer
+loadFooter();
+

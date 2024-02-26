@@ -26,23 +26,6 @@
         <!-- 
     - custom css link
   -->
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
-        <!-- Font Awesome CSS -->
-        <link rel="stylesheet" href="assets/css/vendor/font.awesome.min.css">
-        <!-- Linear Icons CSS -->
-        <link rel="stylesheet" href="assets/css/vendor/linearicons.min.css">
-        <!-- Swiper CSS -->
-        <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
-        <!-- Animation CSS -->
-        <link rel="stylesheet" href="assets/css/plugins/animate.min.css">
-        <!-- Jquery ui CSS -->
-        <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css">
-        <!-- Nice Select CSS -->
-        <link rel="stylesheet" href="assets/css/plugins/nice-select.min.css">
-        <!-- Magnific Popup -->
-        <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
-
         <link rel="stylesheet" href="/assets/css/style.css">
 
         <!-- 
@@ -54,966 +37,638 @@
             href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
             rel="stylesheet">
 
+        <!-- jQuery link -->
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+            crossorigin="anonymous"></script>
+
+        <script>
+    $(document).ready(function () {
+        $("#header").load("/Header.html",);
+        $("#footer").load("/Footer.html");
+    });
+</script>
+
     </head>
 
     <body>
 
-        <!-- 
-    - #HEADER
-  -->
-        <header class="main-header-area">
-            <!-- Main Header Area Start -->
-            <div class="main-header header-sticky">
-                <div class="container custom-area">
-                    <div class="row align-items-center">
-                        <div
-                            class="col-lg-2 col-xl-2 col-md-6 col-6 col-custom">
-                            <div class="header-logo d-flex align-items-center">
-                                <a href="index.html">
-                                    <img class="img-full" src="/favicon.svg"
-                                        alt="Header Logo">
-                                    <h1 style="color: black;">Ecommerce</h1
-                                        style="color: black;">
-                                    </a>
-                                </div>
-                            </div>
-                            <div
-                                class="col-lg-8 d-none d-lg-flex justify-content-center col-custom">
-                                <nav class="main-nav d-none d-lg-flex">
-                                    <ul class="nav">
-                                        <li>
-                                            <a href="index.html" class="active">
-                                                <span class="menu-text">
-                                                    Home</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href>
-                                                <span
-                                                    class="menu-text">Womens</span>
-                                            </a>
-                                            <ul
-                                                class="dropdown-submenu dropdown-hover">
-                                                <li><a
-                                                    href="blog.html">All</a></li>
-                                                <li><a
-                                                        href="blog.html">Dresses</a></li>
-                                                <li><a
-                                                        href="blog-list-right-sidebar.html">Pants</a></li>
-                                                <li><a
-                                                        href="blog-list-fullwidth.html">Skirts</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="menu-text">
-                                                    Mens</span>
-                                            </a>
-                                            <ul
-                                                class="dropdown-submenu dropdown-hover">
-                                                <li><a
-                                                    href="blog.html">All</a></li>
-                                                <li><a
-                                                        href="contact-us.html">Shirts</a></li>
-                                                <li><a
-                                                        href="my-account.html">Pants</a></li>
-                                                <li><a
-                                                        href="frequently-questions.html">Hoodies</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="about-us.html">
-                                                <span
-                                                    class="menu-text">Kids</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="Contactus.html">
-                                                <span class="menu-text">Contact
-                                                    Us</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="col-lg-2 col-md-6 col-6 col-custom">
-                                <div class="header-right-area main-nav">
-                                    <ul class="nav">
-                                        <li class="minicart-wrap">
-                                            <a href="#"
-                                                class="minicart-btn toolbar-btn">
-                                                <i
-                                                    class="fa fa-shopping-cart"></i>
-                                                <span
-                                                    class="cart-item_count">3</span>
-                                            </a>
-                                            <div
-                                                class="cart-item-wrapper dropdown-sidemenu dropdown-hover-2">
-                                                <div class="single-cart-item">
-                                                    <div class="cart-img">
-                                                        <a href="cart.html"><img
-                                                                src="assets/images/cart/1.jpg"
-                                                                alt></a>
-                                                    </div>
-                                                    <div class="cart-text">
-                                                        <h5 class="title"><a
-                                                                href="cart.html">Odio
-                                                                tortor
-                                                                consequat</a></h5>
-                                                        <div
-                                                            class="cart-text-btn">
-                                                            <div
-                                                                class="cart-qty">
-                                                                <span>1×</span>
-                                                                <span
-                                                                    class="cart-price">$98.00</span>
-                                                            </div>
-                                                            <button
-                                                                type="button"><i
-                                                                    class="fa fa-trash-o"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="single-cart-item">
-                                                    <div class="cart-img">
-                                                        <a href="cart.html"><img
-                                                                src="assets/images/cart/2.jpg"
-                                                                alt></a>
-                                                    </div>
-                                                    <div class="cart-text">
-                                                        <h5 class="title"><a
-                                                                href="cart.html">Integer
-                                                                eget
-                                                                augue</a></h5>
-                                                        <div
-                                                            class="cart-text-btn">
-                                                            <div
-                                                                class="cart-qty">
-                                                                <span>1×</span>
-                                                                <span
-                                                                    class="cart-price">$98.00</span>
-                                                            </div>
-                                                            <button
-                                                                type="button"><i
-                                                                    class="fa fa-trash-o"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="single-cart-item">
-                                                    <div class="cart-img">
-                                                        <a href="cart.html"><img
-                                                                src="assets/images/cart/3.jpg"
-                                                                alt></a>
-                                                    </div>
-                                                    <div class="cart-text">
-                                                        <h5 class="title"><a
-                                                                href="cart.html">Eleifend
-                                                                quam</a></h5>
-                                                        <div
-                                                            class="cart-text-btn">
-                                                            <div
-                                                                class="cart-qty">
-                                                                <span>1×</span>
-                                                                <span
-                                                                    class="cart-price">$98.00</span>
-                                                            </div>
-                                                            <button
-                                                                type="button"><i
-                                                                    class="fa fa-trash-o"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="cart-price-total d-flex justify-content-between">
-                                                    <h5>Total :</h5>
-                                                    <h5>$166.00</h5>
-                                                </div>
-                                                <div
-                                                    class="cart-links d-flex justify-content-between">
-                                                    <a
-                                                        class="btn product-cart button-icon flosun-button dark-btn"
-                                                        href="cart.html">View
-                                                        cart</a>
-                                                    <a
-                                                        class="btn flosun-button secondary-btn rounded-0"
-                                                        href="checkout.html">Checkout</a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="sidemenu-wrap">
-                                            <a href="#"><i class="fa fa-search"></i> </a>
-                                            <ul class="dropdown-sidemenu dropdown-hover-2 dropdown-search">
-                                                <li>
-                                                    <form action="#">
-                                                        <input name="search" id="search" placeholder="Search" type="text">
-                                                        <button type="submit"><i class="fa fa-search"></i></button>
-                                                    </form>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="sidemenu-wrap">
-                                            <a href="#"><i
-                                                    class="fa fa-user"></i> </a>
-                                            </li>
-                                        <li class="mobile-menu-btn d-lg-none">
-                                            <a class="off-canvas-btn" href="#">
-                                                <i class="fa fa-bars"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Main Header Area End -->
-                <!-- off-canvas menu start -->
-                <aside class="off-canvas-wrapper" id="mobileMenu">
-                    <div class="off-canvas-overlay"></div>
-                    <div class="off-canvas-inner-content">
-                        <div class="btn-close-off-canvas">
-                            <i class="fa fa-times"></i>
-                        </div>
-                        <div class="off-canvas-inner">
-                            <div class="search-box-offcanvas">
-                                <form>
-                                    <input type="text"
-                                        placeholder="Search product...">
-                                    <button class="search-btn"><i
-                                            class="fa fa-search"></i></button>
-                                </form>
-                            </div>
-                            <!-- mobile menu start -->
-                            <div class="mobile-navigation">
-                                <!-- mobile menu navigation start -->
-                                <nav>
-                                    <ul class="mobile-menu" class="active">
-                                        <li class="menu-item-has-children"><a
-                                                href="index.html">Home</a>
-                                        </li>
-                                        <li class="menu-item-has-children "><a
-                                                href="#">Womens</a>
-                                            <ul class="dropdown">
-                                                <li><a
-                                                    href="frequently-questions.html">All</a></li>
-                                                <li><a
-                                                        href="blog.html">Dresses</a></li>
-                                                <li><a
-                                                        href="blog-list-right-sidebar.html">Pants</a></li>
-                                                <li><a
-                                                        href="blog-list-fullwidth.html">Skirts</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item-has-children "><a
-                                                href="#">Mens</a>
-                                            <ul class="dropdown">
-                                                <li><a
-                                                    href="frequently-questions.html">All</a></li>
-                                                <li><a
-                                                        href="frequently-questions.html">Shirts</a></li>
-                                                <li><a
-                                                        href="my-account.html">Pants</a></li>
-                                                <li><a
-                                                        href="login-register.html">Hoodies</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a
-                                                href="about-us.html">Kids</a></li>
-                                        <li><a
-                                                href="Contactus.html">Contact</a></li>
-                                    </ul>
-                                </nav>
-                                <!-- mobile menu navigation end -->
-                            </div>
-                            <!-- mobile menu end -->
-                            <div class="offcanvas-widget-area">
-                                <div class="switcher">
-                                    <div class="language">
-                                        <span class="switcher-title">Language:
-                                        </span>
-                                        <div class="switcher-menu">
-                                            <ul>
-                                                <li><a href="#">English</a>
-                                                    <ul
-                                                        class="switcher-dropdown">
-                                                        <li><a
-                                                                href="#">INDIA</a></li>
-                                                        <li><a
-                                                                href="#">USA</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="top-info-wrap text-left text-black">
-                                    <ul class="address-info">
-                                        <li>
-                                            <i class="fa fa-phone"></i>
-                                            <a href="#">+91 1234567890</a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-envelope"></i>
-                                            <a href="#">Ecommerce@gmail.com</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
-                <!-- off-canvas menu end -->
-            </header>
-            <main>
-                <article>
+        <!-- Adding Header -->
+
+        <div id="header"></div>
+
+        <main>
+            <article>
 
                 <!-- Banner -->
 
-                    <section class="section hero"
-                        style="background-image: url('https://i.pinimg.com/originals/21/4c/03/214c035eaee40a3cb5209af31dd6c99e.jpg')">
-                        <!-- <div class="container">
+                <section class="section hero"
+                    style="background-image: url('https://i.pinimg.com/originals/21/4c/03/214c035eaee40a3cb5209af31dd6c99e.jpg')">
+                </section>
 
-                            <h2 class="h1 hero-title">
-                                New Fashion<strong>Collection</strong>
-                            </h2>
-
-                            <p class="hero-text">
-                                Competently expedite alternative benefits
-                                whereas
-                                leading-edge
-                                catalysts for change. Globally leverage
-                                existing an
-                                expanded array of leadership.
-                            </p>
-                            <a>
-                                <button class="btn btn-primary">
-                                    <span>Shop Now</span>
-
-                                    <ion-icon name="arrow-forward-outline"
-                                        aria-hidden="true"></ion-icon>
-                                </button>
-                            </a>
-                        </div> -->
-                    </section>
-
-                    <!-- 
+                <!-- 
         - #PRODUCT
       -->
 
-                    <section class="section product">
-                        <div class="container">
+                <section class="section product">
+                    <div class="container">
 
-                            <h2 class="h2 section-title">Women's Exclusive Collection</h2>
+                        <h2 class="h2 section-title">Women's Exclusive
+                            Collection</h2>
 
-                            <ul class="product-list">
+                        <ul class="product-list">
 
-                                <li class="product-item">
-                                    <div class="product-card" tabindex="0">
+                            <li class="product-item">
+                                <div class="product-card" tabindex="0">
 
-                                        <figure class="card-banner">
-                                            <img
-                                                src="https://i.pinimg.com/736x/77/11/48/7711481e41b7c0ac969df815185b5f4d.jpg"
-                                                width="312"
-                                                height="350" loading="lazy"
-                                                alt="Fancy Dress"
-                                                class="image-contain">
+                                    <figure class="card-banner">
+                                        <img
+                                            src="https://i.pinimg.com/736x/77/11/48/7711481e41b7c0ac969df815185b5f4d.jpg"
+                                            width="312"
+                                            height="350" loading="lazy"
+                                            alt="Fancy Dress"
+                                            class="image-contain">
 
-                                            <div class="card-badge">New</div>
-                                        </figure>
+                                        <div class="card-badge">New</div>
+                                    </figure>
 
-                                        <div class="card-content">
+                                    <div class="card-content">
 
-                                            <div class="card-cat">
-                                                <a href="#"
-                                                    class="add-to-cart-button">Add
-                                                    to Cart</a>
-                                            </div>
-
-                                            <h3 class="h3 card-title">
-                                                <a href="#">Fancy Dress</a>
-                                            </h3>
-
-                                            <data class="card-price"
-                                                value="180.85">Rs.1800.85</data>
-
+                                        <div class="card-cat">
+                                            <a href="#"
+                                                class="add-to-cart-button">Add
+                                                to Cart</a>
                                         </div>
 
+                                        <h3 class="h3 card-title">
+                                            <a href="#">Fancy Dress</a>
+                                        </h3>
+
+                                        <data class="card-price"
+                                            value="180.85">Rs.1800.85</data>
+
                                     </div>
-                                </li>
 
-                                <li class="product-item">
-                                    <div class="product-card" tabindex="0">
+                                </div>
+                            </li>
 
-                                        <figure class="card-banner">
-                                            <img
-                                                src="https://assets.ajio.com/medias/sys_master/root/20230602/KiYR/64793c6042f9e729d70d8bb3/-473Wx593H-461650516-yellow-MODEL.jpg"
-                                                width="312"
-                                                height="350" loading="lazy"
-                                                alt="Printed Gown"
-                                                class="image-contain">
-                                        </figure>
+                            <li class="product-item">
+                                <div class="product-card" tabindex="0">
 
-                                        <div class="card-content">
+                                    <figure class="card-banner">
+                                        <img
+                                            src="https://assets.ajio.com/medias/sys_master/root/20230602/KiYR/64793c6042f9e729d70d8bb3/-473Wx593H-461650516-yellow-MODEL.jpg"
+                                            width="312"
+                                            height="350" loading="lazy"
+                                            alt="Printed Gown"
+                                            class="image-contain">
+                                    </figure>
 
-                                            <div class="card-cat">
-                                                <a href="#"
-                                                    class="add-to-cart-button">Add
-                                                    to Cart</a>
-                                            </div>
+                                    <div class="card-content">
 
-                                            <h3 class="h3 card-title">
-                                                <a href="#">Printed Gown</a>
-                                            </h3>
-
-                                            <data class="card-price"
-                                                value="190.85">Rs.1290.00</data>
-
+                                        <div class="card-cat">
+                                            <a href="#"
+                                                class="add-to-cart-button">Add
+                                                to Cart</a>
                                         </div>
 
+                                        <h3 class="h3 card-title">
+                                            <a href="#">Printed Gown</a>
+                                        </h3>
+
+                                        <data class="card-price"
+                                            value="190.85">Rs.1290.00</data>
+
                                     </div>
-                                </li>
 
-                                <li class="product-item">
-                                    <div class="product-card" tabindex="0">
+                                </div>
+                            </li>
 
-                                        <figure class="card-banner">
-                                            <img
-                                                src="https://5.imimg.com/data5/SELLER/Default/2022/1/TW/IJ/XS/145828151/dupi.jpg"
-                                                width="312"
-                                                height="350" loading="lazy"
-                                                alt="Party Gown"
-                                                class="image-contain">
+                            <li class="product-item">
+                                <div class="product-card" tabindex="0">
 
-                                            <div class="card-badge">New</div>
+                                    <figure class="card-banner">
+                                        <img
+                                            src="https://5.imimg.com/data5/SELLER/Default/2022/1/TW/IJ/XS/145828151/dupi.jpg"
+                                            width="312"
+                                            height="350" loading="lazy"
+                                            alt="Party Gown"
+                                            class="image-contain">
 
-                                        </figure>
+                                        <div class="card-badge">New</div>
 
-                                        <div class="card-content">
+                                    </figure>
 
-                                            <div class="card-cat">
-                                                <a href="#"
-                                                    class="add-to-cart-button">Add
-                                                    to Cart</a>
-                                            </div>
+                                    <div class="card-content">
 
-                                            <h3 class="h3 card-title">
-                                                <a href="#"> Party Gown</a>
-                                            </h3>
-
-                                            <data class="card-price"
-                                                value="160.85">Rs.11160.65</data>
-
+                                        <div class="card-cat">
+                                            <a href="#"
+                                                class="add-to-cart-button">Add
+                                                to Cart</a>
                                         </div>
 
+                                        <h3 class="h3 card-title">
+                                            <a href="#"> Party Gown</a>
+                                        </h3>
+
+                                        <data class="card-price"
+                                            value="160.85">Rs.11160.65</data>
+
                                     </div>
-                                </li>
 
-                                <li class="product-item">
-                                    <div class="product-card" tabindex="0">
+                                </div>
+                            </li>
 
-                                        <figure class="card-banner">
-                                            <img
-                                                src="https://i.pinimg.com/736x/4d/3c/15/4d3c151c994a8dda1d35a085072118f4.jpg"
-                                                width="312"
-                                                height="350" loading="lazy"
-                                                alt="Designer Dress "
-                                                class="image-contain">
+                            <li class="product-item">
+                                <div class="product-card" tabindex="0">
 
-                                            <div class="card-badge"> -25%</div>
-                                        </figure>
+                                    <figure class="card-banner">
+                                        <img
+                                            src="https://i.pinimg.com/736x/4d/3c/15/4d3c151c994a8dda1d35a085072118f4.jpg"
+                                            width="312"
+                                            height="350" loading="lazy"
+                                            alt="Designer Dress "
+                                            class="image-contain">
 
-                                        <div class="card-content">
+                                        <div class="card-badge"> -25%</div>
+                                    </figure>
 
-                                            <div class="card-cat">
-                                                <a href="#"
-                                                    class="add-to-cart-button">Add
-                                                    to Cart</a>
-                                            </div>
+                                    <div class="card-content">
 
-                                            <h3 class="h3 card-title">
-                                                <a href="#">Designer Dress
-                                                </a>
-                                            </h3>
-
-                                            <data class="card-price"
-                                                value="170.85">Rs.1170.95
-                                                <del>Rs.2200.91</del></data>
-
+                                        <div class="card-cat">
+                                            <a href="#"
+                                                class="add-to-cart-button">Add
+                                                to Cart</a>
                                         </div>
 
+                                        <h3 class="h3 card-title">
+                                            <a href="#">Designer Dress
+                                            </a>
+                                        </h3>
+
+                                        <data class="card-price"
+                                            value="170.85">Rs.1170.95
+                                            <del>Rs.2200.91</del></data>
+
                                     </div>
-                                </li>
 
-                                <li class="product-item">
-                                    <div class="product-card" tabindex="0">
+                                </div>
+                            </li>
 
-                                        <figure class="card-banner">
-                                            <img
-                                                src="https://m.media-amazon.com/images/I/71JFeGC+7SL._SY550_.jpg"
-                                                width="312"
-                                                height="350" loading="lazy"
-                                                alt="Maxi Gown"
-                                                class="image-contain">
+                            <li class="product-item">
+                                <div class="product-card" tabindex="0">
 
-                                            <div class="card-badge">New</div>
+                                    <figure class="card-banner">
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/71JFeGC+7SL._SY550_.jpg"
+                                            width="312"
+                                            height="350" loading="lazy"
+                                            alt="Maxi Gown"
+                                            class="image-contain">
 
-                                        </figure>
+                                        <div class="card-badge">New</div>
 
-                                        <div class="card-content">
+                                    </figure>
 
-                                            <div class="card-cat">
-                                                <a href="#"
-                                                    class="add-to-cart-button">Add
-                                                    to Cart</a>
-                                            </div>
+                                    <div class="card-content">
 
-                                            <h3 class="h3 card-title">
-                                                <a href="#">Maxi Gown</a>
-                                            </h3>
-
-                                            <data class="card-price"
-                                                value="120.85">Rs.5600.85</data>
-
+                                        <div class="card-cat">
+                                            <a href="#"
+                                                class="add-to-cart-button">Add
+                                                to Cart</a>
                                         </div>
 
+                                        <h3 class="h3 card-title">
+                                            <a href="#">Maxi Gown</a>
+                                        </h3>
+
+                                        <data class="card-price"
+                                            value="120.85">Rs.5600.85</data>
+
                                     </div>
-                                </li>
 
-                                <li class="product-item">
-                                    <div class="product-card" tabindex="0">
+                                </div>
+                            </li>
 
-                                        <figure class="card-banner">
-                                            <img
-                                                src="https://i.pinimg.com/736x/b7/33/36/b73336810ac3ba251f729ea6c7428668.jpg"
-                                                width="312"
-                                                height="350" loading="lazy"
-                                                alt="Purple Longdress"
-                                                class="image-contain">
-                                        </figure>
+                            <li class="product-item">
+                                <div class="product-card" tabindex="0">
 
-                                        <div class="card-content">
+                                    <figure class="card-banner">
+                                        <img
+                                            src="https://i.pinimg.com/736x/b7/33/36/b73336810ac3ba251f729ea6c7428668.jpg"
+                                            width="312"
+                                            height="350" loading="lazy"
+                                            alt="Purple Longdress"
+                                            class="image-contain">
+                                    </figure>
 
-                                            <div class="card-cat">
-                                                <a href="#"
-                                                    class="add-to-cart-button">Add
-                                                    to Cart</a>
-                                            </div>
+                                    <div class="card-content">
 
-                                            <h3 class="h3 card-title">
-                                                <a href="#">Purple Longdress</a>
-                                            </h3>
-
-                                            <data class="card-price"
-                                                value="100.85">Rs.8000.00</data>
-
+                                        <div class="card-cat">
+                                            <a href="#"
+                                                class="add-to-cart-button">Add
+                                                to Cart</a>
                                         </div>
 
+                                        <h3 class="h3 card-title">
+                                            <a href="#">Purple Longdress</a>
+                                        </h3>
+
+                                        <data class="card-price"
+                                            value="100.85">Rs.8000.00</data>
+
                                     </div>
-                                </li>
 
-                                <li class="product-item">
-                                    <div class="product-card" tabindex="0">
+                                </div>
+                            </li>
 
-                                        <figure class="card-banner">
-                                            <img
-                                                src="https://5.imimg.com/data5/SELLER/Default/2023/9/343556834/YN/YE/XY/155257574/designer-salwar-kameez-for-women.jpg"
-                                                width="312"
-                                                height="350" loading="lazy"
-                                                alt="Green Churidar"
-                                                class="image-contain">
-                                        </figure>
+                            <li class="product-item">
+                                <div class="product-card" tabindex="0">
 
-                                        <div class="card-content">
+                                    <figure class="card-banner">
+                                        <img
+                                            src="https://5.imimg.com/data5/SELLER/Default/2023/9/343556834/YN/YE/XY/155257574/designer-salwar-kameez-for-women.jpg"
+                                            width="312"
+                                            height="350" loading="lazy"
+                                            alt="Green Churidar"
+                                            class="image-contain">
+                                    </figure>
 
-                                            <div class="card-cat">
-                                                <a href="#"
-                                                    class="add-to-cart-button">Add
-                                                    to Cart</a>
-                                            </div>
+                                    <div class="card-content">
 
-                                            <h3 class="h3 card-title">
-                                                <a href="#">Green Churidar</a>
-                                            </h3>
-
-                                            <data class="card-price"
-                                                value="120.85">Rs.2120.85</data>
-
+                                        <div class="card-cat">
+                                            <a href="#"
+                                                class="add-to-cart-button">Add
+                                                to Cart</a>
                                         </div>
 
+                                        <h3 class="h3 card-title">
+                                            <a href="#">Green Churidar</a>
+                                        </h3>
+
+                                        <data class="card-price"
+                                            value="120.85">Rs.2120.85</data>
+
                                     </div>
-                                </li>
-                                <li class="product-item">
-                                    <div class="product-card" tabindex="0">
 
-                                        <figure class="card-banner">
-                                            <img
-                                                src="https://rukminim2.flixcart.com/image/850/1000/xif0q/dress/t/5/t/l-nyalkaran-7079-irvan-original-imagmwhpeugaygps.jpeg?q=20&crop=true"
-                                                width="312"
-                                                height="350" loading="lazy"
-                                                alt="Black Dress"
-                                                class="image-contain">
-                                        </figure>
+                                </div>
+                            </li>
+                            <li class="product-item">
+                                <div class="product-card" tabindex="0">
 
-                                        <div class="card-content">
+                                    <figure class="card-banner">
+                                        <img
+                                            src="https://rukminim2.flixcart.com/image/850/1000/xif0q/dress/t/5/t/l-nyalkaran-7079-irvan-original-imagmwhpeugaygps.jpeg?q=20&crop=true"
+                                            width="312"
+                                            height="350" loading="lazy"
+                                            alt="Black Dress"
+                                            class="image-contain">
+                                    </figure>
 
-                                            <div class="card-cat">
-                                                <a href="#"
-                                                    class="add-to-cart-button">Add
-                                                    to Cart</a>
-                                            </div>
+                                    <div class="card-content">
 
-                                            <h3 class="h3 card-title">
-                                                <a href="#">Black Dress</a>
-                                            </h3>
-
-                                            <data class="card-price"
-                                                value="100.85">Rs.1000.85</data>
-
+                                        <div class="card-cat">
+                                            <a href="#"
+                                                class="add-to-cart-button">Add
+                                                to Cart</a>
                                         </div>
 
+                                        <h3 class="h3 card-title">
+                                            <a href="#">Black Dress</a>
+                                        </h3>
+
+                                        <data class="card-price"
+                                            value="100.85">Rs.1000.85</data>
+
                                     </div>
-                                </li>
-                                <li class="product-item">
-                                    <div class="product-card" tabindex="0">
 
-                                        <figure class="card-banner">
-                                            <img 
-                                                src="https://www.textileinfomedia.com/img/ccdt/girls-printed-western-dresses-full.jpg"
-                                                width="312"
-                                                height="350" loading="lazy"
-                                                alt="Western Dress"
-                                                class="image-contain">
-                                        </figure>
+                                </div>
+                            </li>
+                            <li class="product-item">
+                                <div class="product-card" tabindex="0">
 
-                                        <div class="card-content">
+                                    <figure class="card-banner">
+                                        <img
+                                            src="https://www.textileinfomedia.com/img/ccdt/girls-printed-western-dresses-full.jpg"
+                                            width="312"
+                                            height="350" loading="lazy"
+                                            alt="Western Dress"
+                                            class="image-contain">
+                                    </figure>
 
-                                            <div class="card-cat">
-                                                <a href="#"
-                                                    class="add-to-cart-button">Add
-                                                    to Cart</a>
-                                            </div>
+                                    <div class="card-content">
 
-                                            <h3 class="h3 card-title">
-                                                <a href="#">Western Dress</a>
-                                            </h3>
-
-                                            <data class="card-price"
-                                                value="100.85">Rs.3100.85</data>
-
+                                        <div class="card-cat">
+                                            <a href="#"
+                                                class="add-to-cart-button">Add
+                                                to Cart</a>
                                         </div>
 
+                                        <h3 class="h3 card-title">
+                                            <a href="#">Western Dress</a>
+                                        </h3>
+
+                                        <data class="card-price"
+                                            value="100.85">Rs.3100.85</data>
+
                                     </div>
-                                </li>
-                                <li class="product-item">
-                                    <div class="product-card" tabindex="0">
 
-                                        <figure class="card-banner">
-                                            <img
-                                                src="https://i.pinimg.com/564x/0f/19/0c/0f190c665062fb0ab91470c90775da57.jpg"
-                                                width="312"
-                                                height="350" loading="lazy"
-                                                alt="Bridal Lehenga"
-                                                class="image-contain">
-                                        </figure>
+                                </div>
+                            </li>
+                            <li class="product-item">
+                                <div class="product-card" tabindex="0">
 
-                                        <div class="card-content">
+                                    <figure class="card-banner">
+                                        <img
+                                            src="https://i.pinimg.com/564x/0f/19/0c/0f190c665062fb0ab91470c90775da57.jpg"
+                                            width="312"
+                                            height="350" loading="lazy"
+                                            alt="Bridal Lehenga"
+                                            class="image-contain">
+                                    </figure>
 
-                                            <div class="card-cat">
-                                                <a href="#"
-                                                    class="add-to-cart-button">Add
-                                                    to Cart</a>
-                                            </div>
+                                    <div class="card-content">
 
-                                            <h3 class="h3 card-title">
-                                                <a href="#">Bridal Lehenga</a>
-                                            </h3>
-
-                                            <data class="card-price"
-                                                value="100.85">Rs.13400.85</data>
-
+                                        <div class="card-cat">
+                                            <a href="#"
+                                                class="add-to-cart-button">Add
+                                                to Cart</a>
                                         </div>
 
+                                        <h3 class="h3 card-title">
+                                            <a href="#">Bridal Lehenga</a>
+                                        </h3>
+
+                                        <data class="card-price"
+                                            value="100.85">Rs.13400.85</data>
+
                                     </div>
-                                </li><li class="product-item">
-                                    <div class="product-card" tabindex="0">
 
-                                        <figure class="card-banner">
-                                            <img
-                                                src="https://m.media-amazon.com/images/I/51Fpvx2H4yL._AC_SX425_.jpg"
-                                                width="312"
-                                                height="350" loading="lazy"
-                                                alt="Marron Dress"
-                                                class="image-contain">
-                                        </figure>
+                                </div>
+                            </li><li class="product-item">
+                                <div class="product-card" tabindex="0">
 
-                                        <div class="card-content">
+                                    <figure class="card-banner">
+                                        <img
+                                            src="https://m.media-amazon.com/images/I/51Fpvx2H4yL._AC_SX425_.jpg"
+                                            width="312"
+                                            height="350" loading="lazy"
+                                            alt="Marron Dress"
+                                            class="image-contain">
+                                    </figure>
 
-                                            <div class="card-cat">
-                                                <a href="#"
-                                                    class="add-to-cart-button">Add
-                                                    to Cart</a>
-                                            </div>
+                                    <div class="card-content">
 
-                                            <h3 class="h3 card-title">
-                                                <a href="#">Marron Dress</a>
-                                            </h3>
-
-                                            <data class="card-price"
-                                                value="100.85">Rs.1400.85</data>
-
+                                        <div class="card-cat">
+                                            <a href="#"
+                                                class="add-to-cart-button">Add
+                                                to Cart</a>
                                         </div>
 
+                                        <h3 class="h3 card-title">
+                                            <a href="#">Marron Dress</a>
+                                        </h3>
+
+                                        <data class="card-price"
+                                            value="100.85">Rs.1400.85</data>
+
                                     </div>
-                                </li>
 
-                                <li class="product-item">
-                                    <div class="product-card" tabindex="0">
+                                </div>
+                            </li>
 
-                                        <figure class="card-banner">
-                                            <img
-                                                src="https://images.meesho.com/images/products/244375860/o3ouj_512.webp"
-                                                width="312"
-                                                height="350" loading="lazy"
-                                                alt="Dress"
-                                                class="image-contain">
-                                        </figure>
+                            <li class="product-item">
+                                <div class="product-card" tabindex="0">
 
-                                        <div class="card-content">
+                                    <figure class="card-banner">
+                                        <img
+                                            src="https://images.meesho.com/images/products/244375860/o3ouj_512.webp"
+                                            width="312"
+                                            height="350" loading="lazy"
+                                            alt="Dress"
+                                            class="image-contain">
+                                    </figure>
 
-                                            <div class="card-cat">
-                                                <a href="#"
-                                                    class="add-to-cart-button">Add
-                                                    to Cart</a>
-                                            </div>
+                                    <div class="card-content">
 
-                                            <h3 class="h3 card-title">
-                                                <a href="#">Printed Dress</a>
-                                            </h3>
-
-                                            <data class="card-price"
-                                                value="100.85">Rs.1300.85</data>
-
+                                        <div class="card-cat">
+                                            <a href="#"
+                                                class="add-to-cart-button">Add
+                                                to Cart</a>
                                         </div>
 
+                                        <h3 class="h3 card-title">
+                                            <a href="#">Printed Dress</a>
+                                        </h3>
+
+                                        <data class="card-price"
+                                            value="100.85">Rs.1300.85</data>
+
                                     </div>
-                                </li>
 
-                            </ul>
+                                </div>
+                            </li>
 
-                        </div>
-                    </section>
+                        </ul>
 
-                    <!-- 
+                    </div>
+                </section>
+
+                <!-- 
         - #CTA
       -->
 
-                    <section class="section cta">
-                        <div class="container">
+                <section class="section cta">
+                    <div class="container">
 
-                            <ul class="cta-list">
+                        <ul class="cta-list">
 
-                                <li>
-                                    <div class="cta-card"
-                                        style="background-image: url('https://i.ytimg.com/vi/U5Q3Du2W9a0/maxresdefault.jpg')">
-                                        <p class="card-subtitle">Gucci
-                                            Collection</p>
+                            <li>
+                                <div class="cta-card"
+                                    style="background-image: url('https://i.ytimg.com/vi/U5Q3Du2W9a0/maxresdefault.jpg')">
+                                    <p class="card-subtitle">Gucci
+                                        Collection</p>
 
-                                        <h3 class="h2 card-title">The Summer
-                                            Sale
-                                            Off 50%</h3>
+                                    <h3 class="h2 card-title">The Summer
+                                        Sale
+                                        Off 50%</h3>
 
-                                        <a href="#" class="btn btn-link">
-                                            <span>Shop Now</span>
+                                    <a href="#" class="btn btn-link">
+                                        <span>Shop Now</span>
 
-                                            <ion-icon
-                                                name="arrow-forward-outline"
-                                                aria-hidden="true"></ion-icon>
-                                        </a>
-                                    </div>
-                                </li>
+                                        <ion-icon
+                                            name="arrow-forward-outline"
+                                            aria-hidden="true"></ion-icon>
+                                    </a>
+                                </div>
+                            </li>
 
-                                <li>
-                                    <div class="cta-card"
-                                        style="background-image: url('https://img.freepik.com/premium-vector/summer-fashion-sale-banner-design-template_2239-1174.jpg')">
-                                        <p class="card-subtitle">Coming Out cool
-                                            Fashion</p>
+                            <li>
+                                <div class="cta-card"
+                                    style="background-image: url('https://img.freepik.com/premium-vector/summer-fashion-sale-banner-design-template_2239-1174.jpg')">
+                                    <p class="card-subtitle">Coming Out cool
+                                        Fashion</p>
 
-                                        <h3 class="h2 card-title">Makes Yourself
-                                            Keep fashionable</h3>
+                                    <h3 class="h2 card-title">Makes Yourself
+                                        Keep fashionable</h3>
 
-                                        <a href="#" class="btn btn-link">
-                                            <span>Shop Now</span>
+                                    <a href="#" class="btn btn-link">
+                                        <span>Shop Now</span>
 
-                                            <ion-icon
-                                                name="arrow-forward-outline"
-                                                aria-hidden="true"></ion-icon>
-                                        </a>
-                                    </div>
-                                </li>
+                                        <ion-icon
+                                            name="arrow-forward-outline"
+                                            aria-hidden="true"></ion-icon>
+                                    </a>
+                                </div>
+                            </li>
 
-                            </ul>
+                        </ul>
 
-                        </div>
-                    </section>
+                    </div>
+                </section>
 
-                    <!-- 
+                <!-- 
         - #SERVICE
       -->
 
-                    <section class="section service">
-                        <div class="container">
+                <section class="section service">
+                    <div class="container">
 
-                            <ul class="service-list">
+                        <ul class="service-list">
 
-                                <li class="service-item">
-                                    <div class="service-card">
+                            <li class="service-item">
+                                <div class="service-card">
 
-                                        <div class="card-icon">
-                                            <img
-                                                src="/assets/images/service-1.png"
-                                                width="53"
-                                                height="28" loading="lazy"
-                                                alt="Service icon">
-                                        </div>
-
-                                        <div>
-                                            <h3 class="h4 card-title">Free
-                                                Shiping</h3>
-
-                                            <p class="card-text">
-                                                All orders over
-                                                <span>$150</span>
-                                            </p>
-                                        </div>
-
+                                    <div class="card-icon">
+                                        <img
+                                            src="/assets/images/service-1.png"
+                                            width="53"
+                                            height="28" loading="lazy"
+                                            alt="Service icon">
                                     </div>
-                                </li>
 
-                                <li class="service-item">
-                                    <div class="service-card">
+                                    <div>
+                                        <h3 class="h4 card-title">Free
+                                            Shiping</h3>
 
-                                        <div class="card-icon">
-                                            <img
-                                                src="/assets/images/service-2.png"
-                                                width="43"
-                                                height="35" loading="lazy"
-                                                alt="Service icon">
-                                        </div>
-
-                                        <div>
-                                            <h3 class="h4 card-title">Quick
-                                                Payment</h3>
-
-                                            <p class="card-text">
-                                                100% secure payment
-                                            </p>
-                                        </div>
-
+                                        <p class="card-text">
+                                            All orders over
+                                            <span>$150</span>
+                                        </p>
                                     </div>
-                                </li>
 
-                                <li class="service-item">
-                                    <div class="service-card">
+                                </div>
+                            </li>
 
-                                        <div class="card-icon">
-                                            <img
-                                                src="/assets/images/service-3.png"
-                                                width="40"
-                                                height="40" loading="lazy"
-                                                alt="Service icon">
-                                        </div>
+                            <li class="service-item">
+                                <div class="service-card">
 
-                                        <div>
-                                            <h3 class="h4 card-title">Free
-                                                Returns</h3>
-
-                                            <p class="card-text">
-                                                Money back in 30 days
-                                            </p>
-                                        </div>
-
+                                    <div class="card-icon">
+                                        <img
+                                            src="/assets/images/service-2.png"
+                                            width="43"
+                                            height="35" loading="lazy"
+                                            alt="Service icon">
                                     </div>
-                                </li>
 
-                                <li class="service-item">
-                                    <div class="service-card">
+                                    <div>
+                                        <h3 class="h4 card-title">Quick
+                                            Payment</h3>
 
-                                        <div class="card-icon">
-                                            <img
-                                                src="/assets/images/service-4.png"
-                                                width="40"
-                                                height="40" loading="lazy"
-                                                alt="Service icon">
-                                        </div>
-
-                                        <div>
-                                            <h3 class="h4 card-title">24/7
-                                                Support</h3>
-
-                                            <p class="card-text">
-                                                Get Quick Support
-                                            </p>
-                                        </div>
-
+                                        <p class="card-text">
+                                            100% secure payment
+                                        </p>
                                     </div>
-                                </li>
 
-                            </ul>
+                                </div>
+                            </li>
 
-                        </div>
-                    </section>
-                </article>
-            </main>
+                            <li class="service-item">
+                                <div class="service-card">
 
-            <!-- Adding Footer -->
+                                    <div class="card-icon">
+                                        <img
+                                            src="/assets/images/service-3.png"
+                                            width="40"
+                                            height="40" loading="lazy"
+                                            alt="Service icon">
+                                    </div>
 
-            <div id="footer"></div>
+                                    <div>
+                                        <h3 class="h4 card-title">Free
+                                            Returns</h3>
 
-            <!-- 
+                                        <p class="card-text">
+                                            Money back in 30 days
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <li class="service-item">
+                                <div class="service-card">
+
+                                    <div class="card-icon">
+                                        <img
+                                            src="/assets/images/service-4.png"
+                                            width="40"
+                                            height="40" loading="lazy"
+                                            alt="Service icon">
+                                    </div>
+
+                                    <div>
+                                        <h3 class="h4 card-title">24/7
+                                            Support</h3>
+
+                                        <p class="card-text">
+                                            Get Quick Support
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </section>
+            </article>
+        </main>
+
+        <!-- Adding Footer -->
+
+        <div id="footer"></div>
+
+        <!-- 
     - #GO TO TOP
   -->
 
-            <a href="#top" class="go-top-btn" data-go-top>
-                <ion-icon name="arrow-up-outline"></ion-icon>
-            </a>
-            <!-- 
+        <a href="#top" class="go-top-btn" data-go-top>
+            <ion-icon name="arrow-up-outline"></ion-icon>
+        </a>
+        <!-- 
     - custom js link
     -->
 
-            <!-- jQuery JS -->
-            <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
-            <!-- jQuery Migrate JS -->
-            <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
-            <!-- Modernizer JS -->
-            <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
-            <!-- Bootstrap JS -->
-            <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+        <!-- Jquery Ui js -->
+        <script src="assets/js/plugins/jquery-ui.min.js"></script>
+        <!-- Jquery Countdown js -->
+        <script src="assets/js/plugins/jquery.countdown.min.js"></script>
+        <!-- jquery magnific popup js -->
+        <script
+            src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
 
-            <!-- Swiper Slider JS -->
-            <script src="assets/js/plugins/swiper-bundle.min.js"></script>
-            <!-- nice select JS -->
-            <script src="assets/js/plugins/nice-select.min.js"></script>
-            <!-- Ajaxchimpt js -->
-            <script src="assets/js/plugins/jquery.ajaxchimp.min.js"></script>
-            <!-- Jquery Ui js -->
-            <script src="assets/js/plugins/jquery-ui.min.js"></script>
-            <!-- Jquery Countdown js -->
-            <script src="assets/js/plugins/jquery.countdown.min.js"></script>
-            <!-- jquery magnific popup js -->
-            <script
-                src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
+        <script src="/assets/js/script.js"></script>
 
-            <script src="/assets/js/script.js"></script>
-            <script src="/assets/js/Dynamic_head_Foot.js"></script>
-
-            <!-- 
+        <!-- 
     - ionicon link
   -->
-            <script type="module"
-                src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-            <script nomodule
-                src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-        </body>
+    </body>
 
-    </html>
+</html>
