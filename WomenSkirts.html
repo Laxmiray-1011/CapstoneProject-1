@@ -54,320 +54,29 @@
             href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
             rel="stylesheet">
 
+        <!-- jQuery link -->
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+            crossorigin="anonymous"></script>
+
+        <script>
+$(document).ready(function () {
+    $("#header").load("/Header.html",);
+    $("#footer").load("/Footer.html");
+});
+</script>
+
     </head>
 
     <body>
 
-        <!-- 
-    - #HEADER
-  -->
-        <header class="main-header-area">
-            <!-- Main Header Area Start -->
-            <div class="main-header header-sticky">
-                <div class="container custom-area">
-                    <div class="row align-items-center">
-                        <div
-                            class="col-lg-2 col-xl-2 col-md-6 col-6 col-custom">
-                            <div class="header-logo d-flex align-items-center">
-                                <a href="index.html">
-                                    <img class="img-full" src="/favicon.svg"
-                                        alt="Header Logo">
-                                    <h1 style="color: black;">Ecommerce</h1
-                                        style="color: black;">
-                                    </a>
-                                </div>
-                            </div>
-                            <div
-                                class="col-lg-8 d-none d-lg-flex justify-content-center col-custom">
-                                <nav class="main-nav d-none d-lg-flex">
-                                    <ul class="nav">
-                                        <li>
-                                            <a href="index.html" class="active">
-                                                <span class="menu-text">
-                                                    Home</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href>
-                                                <span
-                                                    class="menu-text">Womens</span>
-                                            </a>
-                                            <ul
-                                                class="dropdown-submenu dropdown-hover">
-                                                <li><a
-                                                    href="blog.html">All</a></li>
-                                                <li><a
-                                                        href="blog.html">Dresses</a></li>
-                                                <li><a
-                                                        href="blog-list-right-sidebar.html">Pants</a></li>
-                                                <li><a
-                                                        href="blog-list-fullwidth.html">Skirts</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="menu-text">
-                                                    Mens</span>
-                                            </a>
-                                            <ul
-                                                class="dropdown-submenu dropdown-hover">
-                                                <li><a
-                                                    href="blog.html">All</a></li>
-                                                <li><a
-                                                        href="contact-us.html">Shirts</a></li>
-                                                <li><a
-                                                        href="my-account.html">Pants</a></li>
-                                                <li><a
-                                                        href="frequently-questions.html">Hoodies</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="about-us.html">
-                                                <span
-                                                    class="menu-text">Kids</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="Contactus.html">
-                                                <span class="menu-text">Contact
-                                                    Us</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="col-lg-2 col-md-6 col-6 col-custom">
-                                <div class="header-right-area main-nav">
-                                    <ul class="nav">
-                                        <li class="minicart-wrap">
-                                            <a href="#"
-                                                class="minicart-btn toolbar-btn">
-                                                <i
-                                                    class="fa fa-shopping-cart"></i>
-                                                <span
-                                                    class="cart-item_count">3</span>
-                                            </a>
-                                            <div
-                                                class="cart-item-wrapper dropdown-sidemenu dropdown-hover-2">
-                                                <div class="single-cart-item">
-                                                    <div class="cart-img">
-                                                        <a href="cart.html"><img
-                                                                src="assets/images/cart/1.jpg"
-                                                                alt></a>
-                                                    </div>
-                                                    <div class="cart-text">
-                                                        <h5 class="title"><a
-                                                                href="cart.html">Odio
-                                                                tortor
-                                                                consequat</a></h5>
-                                                        <div
-                                                            class="cart-text-btn">
-                                                            <div
-                                                                class="cart-qty">
-                                                                <span>1×</span>
-                                                                <span
-                                                                    class="cart-price">$98.00</span>
-                                                            </div>
-                                                            <button
-                                                                type="button"><i
-                                                                    class="fa fa-trash-o"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="single-cart-item">
-                                                    <div class="cart-img">
-                                                        <a href="cart.html"><img
-                                                                src="assets/images/cart/2.jpg"
-                                                                alt></a>
-                                                    </div>
-                                                    <div class="cart-text">
-                                                        <h5 class="title"><a
-                                                                href="cart.html">Integer
-                                                                eget
-                                                                augue</a></h5>
-                                                        <div
-                                                            class="cart-text-btn">
-                                                            <div
-                                                                class="cart-qty">
-                                                                <span>1×</span>
-                                                                <span
-                                                                    class="cart-price">$98.00</span>
-                                                            </div>
-                                                            <button
-                                                                type="button"><i
-                                                                    class="fa fa-trash-o"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="single-cart-item">
-                                                    <div class="cart-img">
-                                                        <a href="cart.html"><img
-                                                                src="assets/images/cart/3.jpg"
-                                                                alt></a>
-                                                    </div>
-                                                    <div class="cart-text">
-                                                        <h5 class="title"><a
-                                                                href="cart.html">Eleifend
-                                                                quam</a></h5>
-                                                        <div
-                                                            class="cart-text-btn">
-                                                            <div
-                                                                class="cart-qty">
-                                                                <span>1×</span>
-                                                                <span
-                                                                    class="cart-price">$98.00</span>
-                                                            </div>
-                                                            <button
-                                                                type="button"><i
-                                                                    class="fa fa-trash-o"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="cart-price-total d-flex justify-content-between">
-                                                    <h5>Total :</h5>
-                                                    <h5>$166.00</h5>
-                                                </div>
-                                                <div
-                                                    class="cart-links d-flex justify-content-between">
-                                                    <a
-                                                        class="btn product-cart button-icon flosun-button dark-btn"
-                                                        href="cart.html">View
-                                                        cart</a>
-                                                    <a
-                                                        class="btn flosun-button secondary-btn rounded-0"
-                                                        href="checkout.html">Checkout</a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="sidemenu-wrap">
-                                            <a href="#"><i class="fa fa-search"></i> </a>
-                                            <ul class="dropdown-sidemenu dropdown-hover-2 dropdown-search">
-                                                <li>
-                                                    <form action="#">
-                                                        <input name="search" id="search" placeholder="Search" type="text">
-                                                        <button type="submit"><i class="fa fa-search"></i></button>
-                                                    </form>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="sidemenu-wrap">
-                                            <a href="#"><i
-                                                    class="fa fa-user"></i> </a>
-                                            </li>
-                                        <li class="mobile-menu-btn d-lg-none">
-                                            <a class="off-canvas-btn" href="#">
-                                                <i class="fa fa-bars"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Main Header Area End -->
-                <!-- off-canvas menu start -->
-                <aside class="off-canvas-wrapper" id="mobileMenu">
-                    <div class="off-canvas-overlay"></div>
-                    <div class="off-canvas-inner-content">
-                        <div class="btn-close-off-canvas">
-                            <i class="fa fa-times"></i>
-                        </div>
-                        <div class="off-canvas-inner">
-                            <div class="search-box-offcanvas">
-                                <form>
-                                    <input type="text"
-                                        placeholder="Search product...">
-                                    <button class="search-btn"><i
-                                            class="fa fa-search"></i></button>
-                                </form>
-                            </div>
-                            <!-- mobile menu start -->
-                            <div class="mobile-navigation">
-                                <!-- mobile menu navigation start -->
-                                <nav>
-                                    <ul class="mobile-menu" class="active">
-                                        <li class="menu-item-has-children"><a
-                                                href="index.html">Home</a>
-                                        </li>
-                                        <li class="menu-item-has-children "><a
-                                                href="#">Womens</a>
-                                            <ul class="dropdown">
-                                                <li><a
-                                                    href="frequently-questions.html">All</a></li>
-                                                <li><a
-                                                        href="blog.html">Dresses</a></li>
-                                                <li><a
-                                                        href="blog-list-right-sidebar.html">Pants</a></li>
-                                                <li><a
-                                                        href="blog-list-fullwidth.html">Skirts</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item-has-children "><a
-                                                href="#">Mens</a>
-                                            <ul class="dropdown">
-                                                <li><a
-                                                    href="frequently-questions.html">All</a></li>
-                                                <li><a
-                                                        href="frequently-questions.html">Shirts</a></li>
-                                                <li><a
-                                                        href="my-account.html">Pants</a></li>
-                                                <li><a
-                                                        href="login-register.html">Hoodies</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a
-                                                href="about-us.html">Kids</a></li>
-                                        <li><a
-                                                href="Contactus.html">Contact</a></li>
-                                    </ul>
-                                </nav>
-                                <!-- mobile menu navigation end -->
-                            </div>
-                            <!-- mobile menu end -->
-                            <div class="offcanvas-widget-area">
-                                <div class="switcher">
-                                    <div class="language">
-                                        <span class="switcher-title">Language:
-                                        </span>
-                                        <div class="switcher-menu">
-                                            <ul>
-                                                <li><a href="#">English</a>
-                                                    <ul
-                                                        class="switcher-dropdown">
-                                                        <li><a
-                                                                href="#">INDIA</a></li>
-                                                        <li><a
-                                                                href="#">USA</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="top-info-wrap text-left text-black">
-                                    <ul class="address-info">
-                                        <li>
-                                            <i class="fa fa-phone"></i>
-                                            <a href="#">+91 1234567890</a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-envelope"></i>
-                                            <a href="#">Ecommerce@gmail.com</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
-                <!-- off-canvas menu end -->
-            </header>
+       <!-- Adding header here -->
+       <div id="header"></div>
+       
             <main>
                 <article>
 
-                <!-- Banner -->
+                    <!-- Banner -->
 
                     <section class="section hero"
                         style="background-image: url('https://chuumade.com/cdn/shop/collections/collection_banner_guides-skirts.jpg?v=1644818681')">
@@ -403,7 +112,8 @@
                     <section class="section product">
                         <div class="container">
 
-                            <h2 class="h2 section-title">Women's Exclusive Skirts</h2>
+                            <h2 class="h2 section-title">Women's Exclusive
+                                Skirts</h2>
 
                             <ul class="product-list">
 
@@ -677,7 +387,7 @@
                                     <div class="product-card" tabindex="0">
 
                                         <figure class="card-banner">
-                                            <img 
+                                            <img
                                                 src="https://assets.myntassets.com/fl_progressive/h_960,q_80,w_720/v1/assets/images/productimage/2021/4/9/bda24625-dfe1-4294-96e8-b8889ee573181617952803306-1.jpg"
                                                 width="312"
                                                 height="350" loading="lazy"
@@ -694,7 +404,8 @@
                                             </div>
 
                                             <h3 class="h3 card-title">
-                                                <a href="#">Berrylush Green skirt</a>
+                                                <a href="#">Berrylush Green
+                                                    skirt</a>
                                             </h3>
 
                                             <data class="card-price"
@@ -965,11 +676,9 @@
                 </article>
             </main>
 
-        
-
             <!-- Adding Footer -->
 
-            <div class="footer"></div>
+            <div id="footer"></div>
 
             <!-- 
     - #GO TO TOP
@@ -1006,8 +715,6 @@
                 src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
 
             <script src="/assets/js/script.js"></script>
-
-            <script src="/assets/js/Dynamic_head_Foot.js"></script>
 
             <!-- 
     - ionicon link
