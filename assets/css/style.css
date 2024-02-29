@@ -1503,7 +1503,7 @@ body {
 
 
 /*-----------------------------------*\
- * #SPECIAL
+ * #Featured Product
 \*-----------------------------------*/
 
 .special-banner {
@@ -2015,7 +2015,7 @@ a.footer-link:is(:hover, :focus) {
 
 
   /**
-   * SPECIAL
+   * Featured Product
    */
 
   .special-banner .banner-title {
@@ -2088,7 +2088,7 @@ a.footer-link:is(:hover, :focus) {
 
 
   /**
-   * SPECIAL
+   * Featured Product
    */
 
   .special-banner .banner-title {
@@ -2275,7 +2275,7 @@ a.footer-link:is(:hover, :focus) {
 
 
   /**
-   * SPECIAL
+   * Featured Product
    */
 
   .special-banner {
@@ -2360,7 +2360,7 @@ a.footer-link:is(:hover, :focus) {
 
 
   /**
-   * SPECIAL
+   * Featured Product
    */
 
   .special-banner {
@@ -2368,7 +2368,7 @@ a.footer-link:is(:hover, :focus) {
   }
 
   .special-product .has-scrollbar>li {
-    min-width: 15%;
+    min-width: 18.5%;
   }
 
   .special-banner .banner-title {
@@ -2402,6 +2402,7 @@ a.footer-link:is(:hover, :focus) {
   .footer-link-box {
     grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
     gap: 50px;
+
   }
 
 }
